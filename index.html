@@ -7,23 +7,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Restaurant</title>
 </head>
 <body>
     <!-- ............... Home Section Start ................. -->
    <div id="sect-home" class="sect-home">
+    <div class="sect1">
     <div class="info">
     <div class="phon-Date">
-        <div class="phone"><i class="fa-solid fa-mobile-screen-button"></i>+1 5589 55488 55</div>
-        <div class="date"><i class="fa-regular fa-clock"></i>Mon-Sat: 11AM - 23PM</div>
+        <div class="phon-Date-item phone"><i class="fa-solid fa-mobile-screen-button"></i>+1 5589 55488 55</div>
+        <div class="phon-Date-item date"><i class="fa-regular fa-clock"></i>Mon-Sat: 11AM - 23PM</div>
     </div>
-        <div class="lang">En / De</div>
+    <div class="lang"><span>En</span><span>De</span> </div>
     </div>
     <nav>
         <h2><a href="#sect-home">RESTAURANTLY</a></h2>
         <ul>
-            <li><a href="#sect-home"> Home</a></li>
+            <li ><a class="active" href="#sect-home"> Home</a></li>
             <li><a href="">About</a></li>
             <li><a href="">Menu</a></li>
             <li><a href="">Specials</a></li>
@@ -37,20 +39,37 @@
     </nav>
     <div class="welcome">
         <div class="introduction">
-           <h1>Welcome to Restaurantly</h1>
+           <h1>Welcome to <span>Restaurantly</span></h1>
            <h3>Delivering great food for more than 18 years!</h3>
            <div class="btns">
              <a href="">OUR MENU</a>
              <a href="">BOOK A TABLE</a>
            </div>
         </div>
-        <div class="video">
-            <a href="https://www.youtube.com/watch?v=u6BOC7CDUTQ"></a>
+        <div class="video-btn">
+            <div class="play">
+           <i class="fa-solid fa-play"></i>
+           </div>
         </div>
     </div>
    </div>
+   <div class="show-video">
+    <i id="xmark" class="fa-solid fa-xmark"></i> 
+    <div style="width: 90%;">
+    <div class="title"><img src="./image/bg-17d5f5e6.jpg" alt=""><span>Bezdan 21 restaurant promo video</span></div>
+    <video src="./image/Bezdan 21 restaurant promo video.mp4" controls autoplay></video>
+    </div>
+   
+   </div>
+   </div>
     <!-- ............... Home Section End ................. -->
 
+<div class="sect2">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ullam dolore laboriosam expedita qui ducimus itaque, dignissimos deserunt eum quod illum corrupti modi iste? Perferendis ipsum cupiditate laborum recusandae eius hic ex id nisi amet animi iste, soluta minus aliquid maxime dolorum fugit sunt tempora sed quam vitae distinctio debitis?</p>
+</div>
+ 
+    
 
+<script src="./script.js"></script>
 </body>
 </html>
