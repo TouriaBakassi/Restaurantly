@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
 *{
     margin: 0;padding: 0;box-sizing: border-box;
 }
@@ -118,8 +119,8 @@ font-size: 47px;
     margin: 0;
     font-size: 22px;
     font-weight: 300;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    /* color: #cda45e; */
+    font-family: 'Playfair Display', serif;
+        /* color: #cda45e; */
     }
 .introduction .btns{
     padding: 40px 0px;
@@ -232,8 +233,7 @@ position: relative;bottom: 80px;
 .sect-about ul li:nth-child(1){
    font-size: 25px;
    font-weight: 700;
-   font-family:Georgia, 'Times New Roman', Times, serif;
-}
+   font-family: 'Playfair Display', serif;}
 .sect-about ul li:nth-child(2){
     font-size: 15px;
    font-style: italic;
@@ -295,10 +295,90 @@ border: 5px solid rgba(255, 255, 255, 0.2);
              }
 
 /* .....................Sect About End........ */
-/* .....................Sect  Start........ */
+/* .....................Sect Why-Us Start......... */
+.sect-why-us{
+    width: 100%;
+    padding: 60px 100px;
+    background-color: black;
+}
+.titles h4{
+font-size: 15px;
+font-weight: 500;
+color: #aaaaaa;
+
+}
+.titles .line{
+    display: inline-block;
+   width: 130px;
+   height: 1px;background-color: #aaaaaa;
+   margin-bottom: 3px;
+   padding: 0px 5px;
+    }
+.titles h2{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+color: #cda45e;
+    }
+.all-cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;flex-wrap: wrap;
+margin: 5px 0px;
+padding: 50px 0px 10px 0px;
+}
+.card{
+    width: 32%;
+    padding:40px 34px;
+    background-color: #1A1814;
+    color: #aaaaaa;
+    transition: all 1s ease-in-out;
+}
+.content{
+    padding: 10px 0px;
+    transition: all 1s ease-in-out;
+}
+
+.content h2{
+    margin: 15px 0px;
+    font-size:24 ;
+    font-weight: 600;
+    color: #cda45e;
+    transition: all 1s ease-in-out;
+
+}
+.content h3{
+    margin: 15px 0px;
+    font-family: 'Playfair Display', serif;
+font-size: 22px;
+color: #c6c6c6;
+transition: all 1s ease-in-out;
+
+}
+.content p{
+   font-size: 14px;
+}
+.card:hover{
+    background-color: #cda45e;
+    color: white;
+    transition: all 1s ease-in-out;
+}
+.card:hover .content{
+    transform: translateY(-1.5rem);
+    transition: all 1s ease-in-out;
+}
+.card:hover h2{
+    color: white;
+    transition: all 1s ease-in-out;
+}
 
 
-/* .....................Sect  End.......... */
+
+
+
+
+
+/* .....................Sect Why-Us End.......... */
 /* .....................Sect  Start........ */
 /* .....................Sect  End.......... */
 /* .....................Sect  Start........ */
@@ -362,7 +442,11 @@ border: 5px solid rgba(255, 255, 255, 0.2);
     }
          /* ..........Sect About End........ */
 
-}
+
+    
+           }
+
+
 
 
 
@@ -494,5 +578,16 @@ text-align: center;
     width: 100%;
 }
 /* .....................Sect About End.......... */
+/* .....................Sect Why-Us Start.......... */
+
+.sect-why-us{
+    padding: 60px 20px;
+}
+.card{
+    width: 100%;
+    margin: 10px 0px;
+}
+
+/* .....................Sect Why-Us End.......... */
 
 }
