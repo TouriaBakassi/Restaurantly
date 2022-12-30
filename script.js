@@ -6,5 +6,5 @@ btnvideo.addEventListener("click",()=>{
   video.classList.add("show");
 });
 xmark.addEventListener("click",()=>{
-video.classList.remove("show");
+video.classList.remove("show")
 });

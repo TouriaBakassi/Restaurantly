@@ -311,8 +311,8 @@ color: #aaaaaa;
     display: inline-block;
    width: 130px;
    height: 1px;background-color: #aaaaaa;
-   margin-bottom: 3px;
-   padding: 0px 5px;
+   margin:0px 0px 3px 5px;
+  
     }
 .titles h2{
     font-size: 36px;
@@ -367,9 +367,16 @@ transition: all 1s ease-in-out;
     transform: translateY(-1.5rem);
     transition: all 1s ease-in-out;
 }
-.card:hover h2{
+.card:hover h2,.card:hover h3{
     color: white;
     transition: all 1s ease-in-out;
+}
+/* .....................Sect Why-Us End.......... */
+/* .....................Sect Menu  Start........ */
+.sect-menu{
+    width: 100%;
+    padding: 60px 100px;
+    background-color: #1A1814; 
 }
 
 
@@ -377,10 +384,7 @@ transition: all 1s ease-in-out;
 
 
 
-
-/* .....................Sect Why-Us End.......... */
-/* .....................Sect  Start........ */
-/* .....................Sect  End.......... */
+/* .....................Sect Menu End........... */
 /* .....................Sect  Start........ */
 /* .....................Sect  End.......... */
 /* .....................Sect  Start........ */
@@ -442,7 +446,9 @@ transition: all 1s ease-in-out;
     }
          /* ..........Sect About End........ */
 
-
+.sect-why-us{
+    padding: 60px ;
+}
     
            }
 
