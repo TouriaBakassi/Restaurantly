@@ -7,6 +7,7 @@ body{
   color: #fff;
   font-family: 'Poppins', sans-serif;;
 }
+/* ..........Sect Home Start........ */
 .sect-home{
   width: 100%;
   position: relative;
@@ -45,10 +46,13 @@ content: " ⁄";
 color: rgb(160, 160, 160);
 }
 nav{
+    position: sticky;
+    top: 0;
     padding: 6px 80px; 
     display: flex;justify-content: space-between;align-items: center;
     background-color: rgba(0, 0, 0, 0.581);
     border: 1px solid black;
+    z-index: 100;
 }
 nav a{
     text-decoration: none;
@@ -94,10 +98,13 @@ nav .fa-bars{
 .welcome{
 display: flex;justify-content: space-between;align-items: center;
   padding: 160px 80px;
+  width: 100%;
+  flex-wrap: wrap;
 }
 .introduction{
-    display: flex;justify-content: space-between;align-items:flex-start;
-    flex-direction: column;
+width: 60%;
+display: flex;justify-content: space-between;align-items:flex-start;
+flex-direction: column;
 }
 .introduction h1{
 margin: 0;
@@ -134,6 +141,7 @@ transition: all .6s ease-in-out;
     
    }
 .video-btn{
+    display: flex;justify-content: center;align-items: center;
    border: 1px solid red;
    padding-right: 160px;
 }
@@ -193,6 +201,117 @@ position: relative;bottom: 80px;
     border-radius: 50%;
     margin: 0px 10px;
 }
+/* .....................Sect Home End........ */
+/* ...................Sect About Start........ */
+
+.sect-about{
+    width: 100%;
+    padding: 60px 80px;
+    display: flex;justify-content: center;align-items:center;
+    flex-wrap: wrap-reverse;
+    background: url(./image/about-bg.jpg),rgba(0, 0, 0, 0.778);
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    z-index: 99;
+    position: relative;
+}
+.sect-about ul{
+    width: 50%;
+}
+.sect-about ul li{
+    font-size: 15px; 
+    padding-bottom: 14px;
+}
+.sect-about ul li i{
+    font-size: 22px; 
+   color: #cda45e;
+   padding: 5px 5px 5px 0px;
+}
+.sect-about ul li:nth-child(1){
+   font-size: 25px;
+   font-weight: 700;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.sect-about ul li:nth-child(2){
+    font-size: 15px;
+   font-style: italic;
+ 
+ }
+.sect-about .image-about{
+width: 50%;
+padding: 0px 15px;
+display: flex;align-items: center;
+}
+.sect-about .image-about .image{
+width: 100%;
+ position: relative;
+transition: all .8s ease-in-out;
+/* border: 2px solid rgb(0, 255, 34); */
+
+}
+.sect-about .image-about .image img{
+max-width: 100%;
+min-height: 100%;
+position: relative;
+object-fit: cover;
+border: 5px solid rgba(255, 255, 255, 0.2);
+}
+.image::after{
+    content: "";
+    position: absolute;
+    top: 20px;left: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 10;
+    border-left: 4px solid #cda45e;
+    border-top: 4px solid #cda45e;
+    transition: all .8s ease-in-out;
+ }
+ .image::before{
+    content: "";
+    position: absolute;
+    bottom:25px;right: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 10;
+    border-right: 4px solid #cda45e;
+    border-bottom: 4px solid #cda45e;
+    transition: all .8s ease-in-out;
+ }
+ .sect-about .image:hover{
+   transform: scale(1.05);
+    transition: all .8s ease-in-out;
+    }
+.sect-about .image:hover::after{
+    top: 10px;left: 10px;
+    transition: all .8s ease-in-out;
+
+         }
+.sect-about .image:hover::before{
+    bottom:16px;right: 10px;
+    transition: all .8s ease-in-out;
+             }
+
+/* .....................Sect About End........ */
+/* .....................Sect  Start........ */
+
+
+/* .....................Sect  End.......... */
+/* .....................Sect  Start........ */
+/* .....................Sect  End.......... */
+/* .....................Sect  Start........ */
+/* .....................Sect  End.......... */
+/* .....................Sect  Start........ */
+/* .....................Sect  End.......... */
+/* .....................Sect  Start........ */
+/* .....................Sect  End.......... */
+
+
+
+
+
 
 
 
@@ -224,6 +343,7 @@ position: relative;bottom: 80px;
 /* .....Media Qry 1245px */
 
 @media screen and (max-width: 1245px) {
+    /* ..........Sect Home Start........ */
     nav ul{
         display: none;
     }
@@ -235,10 +355,144 @@ position: relative;bottom: 80px;
         padding-right: 60px;
         padding-left: 60px;
      }
+     /* ..........Sect Home End........ */
+     /* ..........Sect About Start........ */
+     .sect-about{
+        padding: 50px ;
+    }
+         /* ..........Sect About End........ */
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* .....Media Qry 900px */
 @media screen and (max-width: 900px) {
-   
+/* ..........Sect Home Start........ */
+.info{
+    padding: 10px 50px;
+  display: flex;justify-content: center;align-items: center;
+    }
+.phon-Date{
+  display: flex;justify-content: space-between;align-items: center;
+  flex-wrap: wrap;
+        }
+.phon-Date-item{
+     padding: 0px 10px 0px 0px;
+     width: 100%;text-align: center;
+        }
+.lang{
+display: none;
+    }
+nav{
+    padding: 6px 20px; 
+}
+.welcome{
+ padding: 50px;
+
+        }    
+   .introduction{ 
+width: 100%;
+align-items:center;
+text-align: center;
+}
+
+.introduction h1{
+    font-size: 40px;
+    }
+.introduction h3{
+   font-size: 18px;
+       }
+
+.video-btn{
+    width: 100%;
+ }
+ .introduction .btns{
+    display: flex;justify-content: center;align-items: center;
+    flex-wrap: wrap;
+ }
+ .introduction .btns a{
+    width: 100%;
+    padding: 5px 24px ;
+    margin: 5px;
+   }
+/* ..........Sect Home End........ */
+/* .....................Sect About Start........ */
+.sect-about{
+    padding: 60px 20px ;
+}
+.sect-about ul{
+    width: 100%;
+    margin: 40px 0px;
+}
+.sect-about .image-about{
+    width: 100%;
+}
+/* .....................Sect About End.......... */
+
 }
