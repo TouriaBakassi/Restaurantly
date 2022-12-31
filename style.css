@@ -405,15 +405,16 @@ transition: all .3s ease-in-out;
     }
 .menu-list{
     width: 100%;
-    display: flex;justify-content:space-between;align-items: flex-start;
+    display: flex;justify-content:flex-start;align-items: center;
 flex-wrap: wrap;
 padding: 40px 0px 0px 0px;
 }
 .menu-item{
-    width: 48%;
+    width: 49%;
     padding: 10px 0px;
     margin: 10px 10px 10px 0px;
-    display: flex;justify-content: center;align-items: flex-start;
+    display: flex;justify-content: flex-start;align-items: center
+  
 }
 .all.close{
     display: none;
@@ -432,6 +433,8 @@ font-size: 16px;
 font-weight: 600;
 transition: all .3s ease-in-out;
 cursor: pointer;
+width: 100%;
+/* display: inline-block ; */
 }
 .menu-item-info h4:hover{
     color: #cda45e;
@@ -442,11 +445,13 @@ cursor: pointer;
     letter-spacing: 3px;
     color: #d4d4d4;
     padding: 0px 5px;
+   /* display: inline-block; */
     }
   .menu-item-info .prix{
     color: #cda45e;
     font-size: 16px;
     font-weight: 500;
+    /* display: inline-block; */
         }            
 .menu-item-info p{
     font-size: 14px;
@@ -515,16 +520,39 @@ color: #aaaaaa;
         padding: 50px ;
     }
          /* ..........Sect About End........ */
-
+/* .....................Sect Why-Us Start.......... */
 .sect-why-us{
     padding: 60px ;
 }
-    
+/* .....................Sect Why-Us End.......... */
+/* .....................Sect Menu  Start........ */
+.sect-menu{
+    padding: 60px; 
+}
+.menu-item{
+    min-width: 100%;
+   }
+/* .....................Sect Menu  End........ */
            }
 
 
 
 
+
+
+
+
+
+
+
+/* .....Media Qry 1024px */
+
+@media screen and (max-width: 1024px) {
+.menu-item{
+        min-width: 100%;
+        }
+    
+    }
 
 
 
@@ -665,5 +693,21 @@ text-align: center;
 }
 
 /* .....................Sect Why-Us End.......... */
-
+/* .....................Sect Menu  Start........ */
+.sect-menu{
+    padding: 60px 20px; 
+}
+.menu-item{
+   min-width: 100%;
+  }
+  .menu-item-info .point{
+    font-size: 4px;
+    letter-spacing: 2px;
+   display: inline-block;
+    }
+  .menu-item-info .prix{
+    font-size: 15px;
+    display: inline-block;
+        } 
+/* .....................Sect Menu  End........ */
 }
