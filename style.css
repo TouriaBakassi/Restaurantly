@@ -77,6 +77,10 @@ nav ul li a:hover{
    color: #cda45e;
    
  }
+ nav ul li #book:hover{
+    color: white;
+    
+  }
 nav ul li:nth-child(10){
    border: 2px solid #cda45e;
    border-radius: 50px;
@@ -282,6 +286,7 @@ border: 5px solid rgba(255, 255, 255, 0.2);
  }
  .sect-about .image:hover{
    transform: scale(1.05);
+   transform-origin: center;
     transition: all .8s ease-in-out;
     }
 .sect-about .image:hover::after{
@@ -378,12 +383,76 @@ transition: all 1s ease-in-out;
     padding: 60px 100px;
     background-color: #1A1814; 
 }
+.menu{
+    width: 100%;
+    padding: 40px 0px 0px 0px;
+}
+.menu-cle{
+   width: 100%; 
+   display: flex;justify-content:center;align-items: center;
+   font-family: 'Playfair Display', serif;
+   padding: 10px 0px;
+}
+.menu-cle li{
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    }
+.menu-cle li:hover{
+color: #cda45e;
+transition: all .3s ease-in-out;
+}
+.menu-cle li.active{
+    color: #cda45e;
+    }
+.menu-list{
+    width: 100%;
+    display: flex;justify-content:space-between;align-items: center;
+flex-wrap: wrap;
+padding: 40px 0px 0px 0px;
+}
+.menu-item{
+    width: 48%;
+    padding: 10px 0px;
+    margin: 10px 10px 10px 0px;
+    display: flex;justify-content: space-between;align-items: flex-start;
+}
 
-
-
-
-
-
+.menu-item img{
+    width: 70px;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+   border-radius: 50%;
+}
+.menu-item-info{
+    display: inline-block;
+    padding: 0px 10px;
+}
+.menu-item-info h4{
+font-size: 16px;
+font-weight: 600;
+transition: all .3s ease-in-out;
+cursor: pointer;
+}
+.menu-item-info h4:hover{
+    color: #cda45e;
+    transition: all .3s ease-in-out;
+    }
+.menu-item-info .point{
+    font-size: 5px;
+    letter-spacing: 3px;
+    color: #d4d4d4;
+    padding: 0px 5px;
+    }
+  .menu-item-info .prix{
+    color: #cda45e;
+    font-size: 16px;
+    font-weight: 500;
+        }            
+.menu-item-info p{
+    font-size: 14px;
+    font-weight: 500;
+font-style: italic;
+color: #aaaaaa;
+}
 /* .....................Sect Menu End........... */
 /* .....................Sect  Start........ */
 /* .....................Sect  End.......... */
