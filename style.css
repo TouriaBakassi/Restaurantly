@@ -401,7 +401,7 @@ transition: all 1s ease-in-out;
 color: #cda45e;
 transition: all .3s ease-in-out;
 }
-.menu-cle li.active{
+.menu-cle .cle.active{
     color: #cda45e;
     }
 .menu-list{
