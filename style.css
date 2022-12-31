@@ -460,13 +460,132 @@ font-style: italic;
 color: #aaaaaa;
 }
 /* .....................Sect Menu End........... */
-/* .....................Sect  Start........ */
-/* .....................Sect  End.......... */
+/* .....................Sect Specials Start........ */
+.sect-specials{
+    width: 100%;
+    padding: 60px 100px;
+    background-color: #0c0b09; 
+}
+.specials{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 0px 0px 0px;
+}
+.specials-titles{
+width: 25%;
+border-right: 2px solid #cda45e;
+}
+.specials-titles li{
+    width: 100%;
+    padding: 9px 20px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    /* border: 1px solid lawngreen; */
+    }
+.specials-titles li.active{
+        background-color: #cda45e;
+        color: #0c0b09;
+        }    
+.all-specials{
+    width: 73%;
+}
+.special-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+display: none;
+}
+.special-content.open{
+    display: flex;
+}
+.content{
+    width: 70%;
+    color: #aaaaaa;
+    padding: 0px;
+}
+.content h3{
+    font-size: 27px;
+    color: white;
+    margin-top: 0px;
+}
+.content p em{
+    font-size: 15px;
+    padding: 5px 0px;
+    font-weight: 500;
+}
+.content p {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px 0px;
+}
+.special-image{
+    width: 30%;
+}
+.special-image img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .....................Sect Specials End.......... */
 /* .....................Sect  Start........ */
 /* .....................Sect  End.......... */
 /* .....................Sect  Start........ */
 /* .....................Sect  End.......... */
 
+/* .....................Sect  Start........ */
+/* .....................Sect  End.......... */
+/* .....................Sect  Start........ */
+/* .....................Sect  End.......... */
 
 
 
@@ -533,6 +652,12 @@ color: #aaaaaa;
     min-width: 100%;
    }
 /* .....................Sect Menu  End........ */
+
+/* .....................Sect  Start........ */
+/* .....................Sect  End.......... */
+/* .....................Sect  Start........ */
+/* .....................Sect  End.......... */
+
            }
 
 
@@ -548,10 +673,17 @@ color: #aaaaaa;
 /* .....Media Qry 1024px */
 
 @media screen and (max-width: 1024px) {
+   /* .....................Sect Menu Start........ */ 
 .menu-item{
         min-width: 100%;
         }
-    
+/* .....................Sect Menu End.......... */
+/* .....................Sect  Start........ */
+/* .....................Sect  End.......... */
+/* .....................Sect  Start........ */
+/* .....................Sect  End.......... */
+/* .....................Sect  Start........ */
+/* .....................Sect  End.......... */
     }
 
 
@@ -710,4 +842,12 @@ text-align: center;
     display: inline-block;
         } 
 /* .....................Sect Menu  End........ */
+/* .....................Sect  Start........ */
+/* .....................Sect  End.......... */
+/* .....................Sect  Start........ */
+/* .....................Sect  End.......... */
+/* .....................Sect  Start........ */
+/* .....................Sect  End.......... */
+/* .....................Sect  Start........ */
+/* .....................Sect  End.......... */
 }
