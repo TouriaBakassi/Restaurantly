@@ -126,4 +126,18 @@ key2.addEventListener("click",()=>{
      item.classList.remove("open");
       })
   content5.classList.add("open");
-    });    
+    }); 
+
+ // ..........................Swiper
+ var swiper = new Swiper(".mySwiper", {
+  loop: true,
+  speed: 500,
+  autoplay:{
+    delay: 7000,
+    disableOnInteraction:false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable:true,
+  },
+});

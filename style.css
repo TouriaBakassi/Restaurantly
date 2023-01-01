@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 *{
     margin: 0;padding: 0;box-sizing: border-box;
 }
@@ -395,7 +396,7 @@ transition: all 1s ease-in-out;
 .menu-cle li{
     transition: all .3s ease-in-out;
     cursor: pointer;
-    }
+    }  
 .menu-cle li:hover{
 color: #cda45e;
 transition: all .3s ease-in-out;
@@ -472,6 +473,7 @@ color: #aaaaaa;
     justify-content: space-between;
     align-items: flex-start;
     padding: 50px 0px 0px 0px;
+    flex-wrap: wrap;
 }
 .specials-titles{
 width: 25%;
@@ -485,7 +487,7 @@ border-right: 2px solid #cda45e;
     font-weight: 500;
     cursor: pointer;
     /* border: 1px solid lawngreen; */
-    }
+    } 
 .specials-titles li.active{
         background-color: #cda45e;
         color: #0c0b09;
@@ -496,8 +498,9 @@ border-right: 2px solid #cda45e;
 .special-content{
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: top;
+    flex-wrap: wrap-reverse;
 display: none;
 }
 .special-content.open{
@@ -529,56 +532,75 @@ display: none;
 .special-image img{
     width: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* .....................Sect Specials End.......... */
-/* .....................Sect  Start........ */
-/* .....................Sect  End.......... */
+/* .....................Sect Events Start........ */
+.sect-events{
+    width: 100%;
+    padding: 60px 100px;
+    background: url(./image/events-bg.jpg),rgba(0, 0, 0, 0.717);
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.events{
+    width: 100%;
+    padding: 20px 0px;
+    /* display: flex;justify-content: space-between;
+    flex-direction: row; */
+   
+}
+.event{
+    width: 100%;
+display: flex;justify-content: space-between;align-items: flex-start;
+flex-wrap: wrap;
+padding: 20px 0px;
+}
+.event-image{
+    width: 49%;
+}
+.event-image img{
+    width: 100%;
+}
+.event-description{
+    width: 50%;
+}
+.event-description li{
+    width: 100%;
+    padding: 8px 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #e8e7e7;
+}
+.event-description li:nth-child(1){
+    padding: 0px 0px 8px 0px;
+   font-size: 27px;
+   font-weight: 600;
+   color: #cda45e;
+   font-family: 'Playfair Display', serif;
+}
+.event-description li:nth-child(2){
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    text-decoration: underline #cda45e;
+   text-underline-position: under ;
+ }
+.event-description li:nth-child(3){
+ font-style: italic;
+} 
+.swiper-pagination{
+    margin: 100px 0px 0px 0px;
+}
+.swiper-pagination-bullet{
+    background: #cda45e;
+    width: 12px;
+    height: 12px;
+    
+}
+
+/* .....................Sect Events End.......... */
 /* .....................Sect  Start........ */
 /* .....................Sect  End.......... */
 
@@ -652,11 +674,16 @@ display: none;
     min-width: 100%;
    }
 /* .....................Sect Menu  End........ */
-
-/* .....................Sect  Start........ */
-/* .....................Sect  End.......... */
-/* .....................Sect  Start........ */
-/* .....................Sect  End.......... */
+/* .....................Sect Specials Start........ */
+.sect-specials{
+    padding: 60px ;
+}
+/* .....................Sect Specials End.......... */
+/* .....................Sect Events Start........ */
+.sect-events{
+        padding: 60px;
+     }
+/* .....................Sect Events End.......... */
 
            }
 
@@ -678,8 +705,19 @@ display: none;
         min-width: 100%;
         }
 /* .....................Sect Menu End.......... */
-/* .....................Sect  Start........ */
-/* .....................Sect  End.......... */
+/* .....................Sect Events Start........ */
+.sect-events{
+    padding: 60px;
+ }
+ .event-image{
+    width: 100%;
+}
+.event-description{
+    width: 100%;
+}
+
+
+/* .....................Sect Events End.......... */
 /* .....................Sect  Start........ */
 /* .....................Sect  End.......... */
 /* .....................Sect  Start........ */
@@ -832,6 +870,10 @@ text-align: center;
 .menu-item{
    min-width: 100%;
   }
+.menu-cle li{
+     padding: 15px 0px 15px 20px;
+     }
+ 
   .menu-item-info .point{
     font-size: 4px;
     letter-spacing: 2px;
@@ -842,10 +884,31 @@ text-align: center;
     display: inline-block;
         } 
 /* .....................Sect Menu  End........ */
-/* .....................Sect  Start........ */
-/* .....................Sect  End.......... */
-/* .....................Sect  Start........ */
-/* .....................Sect  End.......... */
+/* .....................Sect Specials Start........ */
+.sect-specials{
+    padding: 60px 20px ; 
+}
+.specials-titles{
+    width: 100%;
+    border: none;
+    }
+.all-specials{
+width: 100%;
+margin: 60px 0px 0px 0px;
+}
+.content{
+    width: 100%;
+    padding-top: 30px;
+}
+.special-image{
+width: 100%;
+}    
+/* .....................Sect Specials End.......... */
+/* .....................Sect Events Start........ */
+.sect-events{
+    padding: 60px 20px;
+ }
+/* .....................Sect Events End.......... */
 /* .....................Sect  Start........ */
 /* .....................Sect  End.......... */
 /* .....................Sect  Start........ */
