@@ -682,7 +682,7 @@ font-size: 14px;font-weight: 500;
 .testimonial{
     width: 30%;
     position: relative;
-    margin: 5px 0px;
+    margin: 20px 0px 120px 0px;
 }
 .quote{
 position: relative;
@@ -846,6 +846,10 @@ border-radius: 50%;
 }
 /* .....................Sect Table End.......... */
 /* .....................Sect  Start........ */
+.sect-testimonials{
+    padding: 60px;
+}
+
 /* .....................Sect  End.......... */
     }
 
@@ -1056,5 +1060,12 @@ width: 100%;
 }
 /* .....................Sect Table End.......... */
 /* .....................Sect  Start........ */
+.sect-testimonials{
+    padding: 60px 20px;
+}
+.testimonial{
+    width: 100%;
+    position: relative;
+}
 /* .....................Sect  End.......... */
 }
