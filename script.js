@@ -147,7 +147,7 @@ var swiper = new Swiper(".mySwiper2", {
   slidesPerView: 3,
   spaceBetween: 30,
   autoplay:{
-    delay: 5000,
+    delay: 4000,
     disableOnInteraction:false,
   },
   pagination: {
@@ -163,12 +163,10 @@ var swiper = new Swiper(".mySwiper2", {
       slidesPerView: 1,
       spaceBetween: 20
     },
-    // when window width is >= 480px
     480: {
       slidesPerView: 1,
       spaceBetween: 30
     },
-    // when window width is >= 640px
     640: {
       slidesPerView: 1,
       spaceBetween: 30

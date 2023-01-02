@@ -260,7 +260,9 @@ max-width: 100%;
 min-height: 100%;
 position: relative;
 object-fit: cover;
+vertical-align: middle;
 border: 5px solid rgba(255, 255, 255, 0.2);
+
 }
 .image::after{
     content: "";
@@ -276,7 +278,7 @@ border: 5px solid rgba(255, 255, 255, 0.2);
  .image::before{
     content: "";
     position: absolute;
-    bottom:25px;right: 20px;
+    bottom:20px;right: 20px;
     width: 60px;
     height: 60px;
     z-index: 2;
@@ -295,7 +297,7 @@ border: 5px solid rgba(255, 255, 255, 0.2);
 
          }
 .sect-about .image:hover::before{
-    bottom:16px;right: 10px;
+    bottom:10px;right: 10px;
     transition: all .8s ease-in-out;
              }
 
@@ -747,11 +749,74 @@ width: 30px;
 border-radius: 30px;
 transition: all .5s ease-in-out;
 }
-
-
-
 /* .....................Sect Testimonials End.......... */
+/* .....................Sect Gallery Start........ */
+.sect-gallery{
+    width: 100%;
+    background-color: #0c0b09; 
+    padding: 50px 0px; 
+}
+.sect-gallery .titles{
+   padding:0px 100px 45px 100px; 
+}
+.sect-gallery .gallery{
+    width: 100%;
+    padding: 0px 15px; 
+    display: flex;justify-content: center;
+    flex-wrap: wrap;
+}
+.gallery-item{
+    width: 25%;
+    border-right: 4px solid rgb(69, 64, 53);
+    border-bottom: 4px solid rgb(69, 64, 53);
+overflow: hidden;
+transition: all .5s ease-in-out;
+}
+.gallery-item img{
+   width: 100%;
+    vertical-align: middle;
+    transition: all .5s ease-in-out;
+}
+.gallery-item:hover img{
+  scale: 1.2; 
+  transform-origin: center;
+  transition: all .5s ease-in-out;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .....................Sect Gallery End.......... */
 /* .....................Sect  Start........ */
+
+
+/* .....................Sect  End.......... */
+/* .....................Sect  Start........ */
+
+
+/* .....................Sect  End.......... */
+/* .....................Sect  Start........ */
+
+
+/* .....................Sect  End.......... */
+/* .....................Sect  Start........ */
+
+
+/* .....................Sect  End.......... */
+/* .....................Sect  Start........ */
+
+
 /* .....................Sect  End.......... */
 
 
