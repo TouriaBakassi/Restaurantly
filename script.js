@@ -133,7 +133,7 @@ key2.addEventListener("click",()=>{
   loop: true,
   speed: 500,
   autoplay:{
-    delay: 7000,
+    delay: 6000,
     disableOnInteraction:false,
   },
   pagination: {
