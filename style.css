@@ -314,8 +314,8 @@ color: #aaaaaa;
 }
 .titles .line{
     display: inline-block;
-   width: 130px;
-   height: 1px;background-color: #aaaaaa;
+   width: 120px;
+   height: .6px;background-color: #aaaaaa;
    margin:0px 0px 3px 5px;
   
     }
@@ -339,7 +339,8 @@ padding: 50px 0px 10px 0px;
     color: #aaaaaa;
     transition: all 1s ease-in-out;
 }
-.content{
+.card .content{
+    width: 100%;
     padding: 10px 0px;
     transition: all 1s ease-in-out;
 }
@@ -601,11 +602,132 @@ padding: 20px 0px;
 }
 
 /* .....................Sect Events End.......... */
-/* .....................Sect  Start........ */
-/* .....................Sect  End.......... */
+/* .....................Sect Table Start........ */
+.sect-table{
+    width: 100%;
+    padding: 60px 100px;
+    background-color: #0c0b09; 
+}
+.table{
+width: 100%;
+display: flex;justify-content: space-between;align-items: center;
+flex-direction: column;
+padding: 20px 0px 0px 0px;
+}
+.row{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5px 0px;
+    padding: 5px 0px;
+}
+.row input, .row textarea{
+    padding: 12px;
+    outline:none;
+    border: .3px solid #625b4b;
+    background-color: #0c0b09;
+    color: white;
+    font-size: 15px;
+}
+.row input::placeholder,.row textarea::placeholder{
+    color: #b1aa9a;
+    font-family: 'Open Sans', sans-serif;
+font-size: 14px;font-weight: 500;
+}
+.row input{
+    width: 32%;
+}
+.row textarea{
+    min-width: 100%; 
+    min-height: 25vh;
+    max-height: 25vh;    
+}
+.row input:focus,.row textarea:focus{
+    border: .3px solid #cda45e;
+}
+.row-btn{
+    justify-content: center;
+    padding: 20px 0px 0px 0px;
+}
+.row-btn a{
+  text-decoration: none;
+  color: white;
+  padding: 10px 40px ;
+  background-color: #cda45e;
+  border-radius: 30px;
+  transition: all .5s ease-in-out;
+}
+.row-btn a:hover{
+    background-color: #cda45ee0;
+    transition: all .5s ease-in-out;
 
-/* .....................Sect  Start........ */
-/* .....................Sect  End.......... */
+}
+/* .....................Sect Table End.......... */
+/* .....................Sect Testimonials Start........ */
+.sect-testimonials{
+    width: 100%;
+    padding: 60px 100px;
+    background-color: #0c0b09; 
+}
+.all-testimonials{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0px 20px 0px;
+}
+.testimonial{
+    width: 30%;
+    position: relative;
+    margin: 5px 0px;
+}
+.quote{
+position: relative;
+padding: 18px 18px 50px 18px;
+background-color: rgb(38, 35, 29);
+border-radius: 5px;
+}
+.quote p{
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+}
+.quote i{
+    font-size: 24px;
+    color: #cda45e;
+}
+.author{
+    padding: 15px ;
+    position: absolute;
+   top: 75%;left: 0;
+}
+.author img{
+width: 90px;
+height: 90px;
+border: 6px solid rgba(255, 255, 255, 0.2);
+border-radius: 50%;
+}
+.author h4, .author h5{
+    font-family: 'Playfair Display', serif;
+}
+.author h4{
+   color: white;
+   font-size: 19px;
+   font-weight: 600;
+}
+.author h5{
+   color: #aaaaaa;
+   font-size: 15px;
+   font-weight: 600;
+}
+
+
+
+
+/* .....................Sect Testimonials End.......... */
 /* .....................Sect  Start........ */
 /* .....................Sect  End.......... */
 
@@ -718,8 +840,11 @@ padding: 20px 0px;
 
 
 /* .....................Sect Events End.......... */
-/* .....................Sect  Start........ */
-/* .....................Sect  End.......... */
+/* .....................Sect Table Start........ */
+.sect-table{
+    padding: 60px;
+}
+/* .....................Sect Table End.......... */
 /* .....................Sect  Start........ */
 /* .....................Sect  End.......... */
     }
@@ -909,8 +1034,27 @@ width: 100%;
     padding: 60px 20px;
  }
 /* .....................Sect Events End.......... */
-/* .....................Sect  Start........ */
-/* .....................Sect  End.......... */
+/* .....................Sect Table Start........ */
+.sect-table{
+    padding: 60px 20px;  
+}
+.row{
+    margin: 0px;
+    padding: 0px;
+}
+.row input{
+    width: 100%;
+    margin: 20px 0px;
+}
+.row textarea{
+    min-height: 15vh;
+    max-height: 15vh; 
+    margin: 20px 0px;   
+}
+.row-btn{
+    margin: 20px 0px;
+}
+/* .....................Sect Table End.......... */
 /* .....................Sect  Start........ */
 /* .....................Sect  End.......... */
 }
