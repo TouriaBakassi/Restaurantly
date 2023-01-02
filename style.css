@@ -591,23 +591,22 @@ padding: 20px 0px;
 .event-description li:nth-child(3){
  font-style: italic;
 } 
-.swiper-pagination{
+.sect-events .swiper-pagination{
     margin: 100px 0px 0px 0px;
 }
-.swiper-pagination-bullet{
+.sect-events .swiper-pagination-bullet{
     background: #ccc9c4;
    opacity: .8;
     width: 12px;
     height: 12px; 
     transition: all .5s ease-in-out;
 }
-.swiper-pagination-bullet-active{
+.sect-events .swiper-pagination-bullet-active{
     background: #cda45e;
 opacity: 1;
 width: 30px;
 border-radius: 30px;
 transition: all .5s ease-in-out;
-
 }
 /* .....................Sect Events End.......... */
 /* .....................Sect Table Start........ */
@@ -677,14 +676,14 @@ font-size: 14px;font-weight: 500;
 .sect-testimonials{
     width: 100%;
     padding: 60px 100px;
-    background-color: #0c0b09; 
+    background-color: rgb(26, 24, 20); 
 }
 .all-testimonials{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    align-items: center;flex-direction: row;
+    /* flex-wrap: wrap; */
     padding: 40px 0px 20px 0px;
 }
 .testimonial{
@@ -731,7 +730,23 @@ border-radius: 50%;
    font-size: 15px;
    font-weight: 600;
 }
-
+.sect-testimonials .swiper-pagination2{
+text-align: center;
+}
+.sect-testimonials .swiper-pagination-bullet{
+    background: #ccc9c4;
+   opacity: .8;
+    width: 12px;
+    height: 12px; 
+    transition: all .5s ease-in-out;
+}
+.sect-testimonials .swiper-pagination-bullet-active{
+    background: #cda45e;
+opacity: 1;
+width: 30px;
+border-radius: 30px;
+transition: all .5s ease-in-out;
+}
 
 
 
@@ -1073,7 +1088,6 @@ width: 100%;
 }
 .testimonial{
     width: 100%;
-    position: relative;
 }
 /* .....................Sect  End.......... */
 }

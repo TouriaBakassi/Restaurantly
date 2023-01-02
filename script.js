@@ -128,7 +128,7 @@ key2.addEventListener("click",()=>{
   content5.classList.add("open");
     }); 
 
- // ..........................Swiper
+ // ..........................Swiper1
  var swiper = new Swiper(".mySwiper", {
   loop: true,
   speed: 500,
@@ -140,4 +140,55 @@ key2.addEventListener("click",()=>{
     el: ".swiper-pagination",
     clickable:true,
   },
+});
+// ........................Swiper2
+var swiper = new Swiper(".mySwiper2", {
+  loop: true,
+  slidesPerView: 3,
+  spaceBetween: 30,
+  autoplay:{
+    delay: 5000,
+    disableOnInteraction:false,
+  },
+  pagination: {
+    el: ".swiper-pagination2",
+    clickable: true,
+  },
+  breakpoints: {
+    200: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    },
+    720 : {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    800 : {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    960 : {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+   1120 : {
+      slidesPerView: 3,
+      spaceBetween: 40
+    }
+  }
+
 });
