@@ -792,19 +792,21 @@ transition: all .5s ease-in-out;
 .sect-chefs{
     width: 100%;
     padding: 60px 100px;
-    background-color: rgb(26, 24, 20); 
+    background-color: #0c0b09; 
 }
 .chefs{
     width: 100%;
     display: flex;
     justify-content: space-between;align-items: center;
     flex-wrap: wrap;
-padding: 45px 0px;
+padding: 45px 0px 0px 0px;
 }
 .chefs-item{
-    width: 32%;
+    width: 31%;
     position: relative;
-    border: 1px solid red;overflow: hidden;
+    /* border: 1px solid red; */
+    overflow: hidden;
+    margin: 10px ;
 }
 .chefs-item img{
     width: 100%;  vertical-align: middle;
@@ -812,8 +814,8 @@ padding: 45px 0px;
 }
 .chef-info{
     width: 100%;
-    height: 60%;
-    background: linear-gradient(0deg,rgba(0, 0, 0, 0.729),rgba(4, 4, 4, 0));
+    height: 100%;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.595),rgba(4, 4, 4, 0));
     display: flex;
     justify-content:flex-end;
     align-items: center;
@@ -822,30 +824,55 @@ padding: 45px 0px;
     bottom: 0;
     opacity: 0;
     transform: translateY(50%);
-    transition: all .8s ease-in-out;
+    transition: all .5s ease-in;
 }
 
 .chefs-item:hover .chef-info{
-    opacity: 1;
+    opacity: .8;
     transform: translateY(0%);
-    transition: all .8s ease-in-out;
+    transition: all .5s ease-in-out;
 
 }
 .chef-info h4{
     font-family: 'Playfair Display', serif;
 font-size: 18px;
+transform: translateY(50%);
+    transition: all .8s ease-in;
 }
 .chef-info p{
     font-family: 'Open Sans', serif;
 font-size: 13px;
+transform: translateY(60%);
+    transition: all .8s ease-in-out;
+
 }
 .chef-info .reseaux-social{
     width: 50%;
-    padding: 15px 0px;
+    padding: 20px 0px;
     display: flex;justify-content: space-evenly;
+    transform: translateY(70%);
+    transition: all 1s ease-in;
+}
+.chefs-item:hover .chef-info h4{
+    opacity: 1;
+    transform: translateY(0%);
+    transition: all .8s ease-in-out;
+
+}
+.chefs-item:hover .chef-info p{
+    opacity: 1;
+    transform: translateY(0%);
+    transition: all .8s ease-in-out;
+
+}
+.chefs-item:hover .chef-info .reseaux-social{
+    opacity: 1;
+    transform: translateY(0%);
+    transition: all 1s ease-in-out;
+
 }
 .chef-info .reseaux-social i{
-   font-size: 19px;
+   font-size: 20px;
    cursor: pointer;
    color: white;
    transition: all .4s ease-in-out;
@@ -855,15 +882,25 @@ font-size: 13px;
     transition: all .4s ease-in-out;
 
 }
-
-
-
-
 /* .....................Sect Chefs End.......... */
-/* .....................Sect  Start........ */
-
-
-/* .....................Sect  End.......... */
+/* .....................Sect Contact Start........ */
+.sect-contact{
+    width: 100%;
+    padding: 60px 0px;
+    background-color: #0c0b09; 
+}
+.sect-contact .titles{
+    width: 100%;
+    padding: 60px 100px;
+}
+.map{
+width: 100%;
+}
+.map iframe{
+    width: 100%;
+    margin: 0;padding: 0;
+    }
+/* .....................Sect Contact End.......... */
 /* .....................Sect  Start........ */
 
 
@@ -958,7 +995,18 @@ font-size: 13px;
   padding: 60px;
 }
 /* .....................Sect Chefs End.......... */
+/* .....................Sect Contact Start........ */
 
+
+/* .....................Sect Contact End.......... */
+/* .....................Sect Contact Start........ */
+
+
+/* .....................Sect Contact End.......... */
+/* .....................Sect Contact Start........ */
+
+
+/* .....................Sect Contact End.......... */
            }
 
 
@@ -989,7 +1037,7 @@ font-size: 13px;
 .event-description{
     width: 100%;
 }
-
+ }
 
 /* .....................Sect Events End.......... */
 /* .....................Sect Table Start........ */
@@ -1001,9 +1049,19 @@ font-size: 13px;
 .sect-testimonials{
     padding: 60px;
 }
-
 /* .....................Sect  End.......... */
-    }
+/* .....................Sect Chefs Start........ */
+.sect-chefs{
+   padding: 60px;
+}
+
+/* .....................Sect Chefs End.......... */
+/* .....................Sect Contact Start........ */
+.sect-contact{
+   padding: 60px 0px;
+}
+/* .....................Sect Contact End.......... */
+   
 
 
 
@@ -1227,6 +1285,13 @@ width: 100%;
     width: 100%;
 }
 /* .....................Sect Chefs End.......... */
+/* .....................Sect Contact Start........ */
+.sect-contact{
+   padding: 60px 0px;
+}
+
+/* .....................Sect Contact End.......... */
+   
 /* .....................Sect  End.......... */
 /* .....................Sect  End.......... */
 /* .....................Sect  End.......... */
