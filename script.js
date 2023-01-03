@@ -1,3 +1,6 @@
+let lightbox = new SimpleLightbox('.gallery a', { /* options */ });
+
+
 let xmark=document.getElementById("xmark");
 let video=document.querySelector(".show-video");
 let btnvideo=document.querySelector(".video-btn");
@@ -190,3 +193,4 @@ var swiper = new Swiper(".mySwiper2", {
   }
 
 });
+// .................... lightgallery
