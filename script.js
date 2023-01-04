@@ -1,5 +1,7 @@
+//....................LightBox
 let lightbox = new SimpleLightbox('.gallery a', { /* options */ });
 
+// ............................... Show Video ..................................
 
 let xmark=document.getElementById("xmark");
 let video=document.querySelector(".show-video");
@@ -193,4 +195,14 @@ var swiper = new Swiper(".mySwiper2", {
   }
 
 });
-// .................... lightgallery
+
+// .................... Button-To-Top
+let btntop=document.querySelector(".btn-to-top");
+ window.addEventListener("scroll",()=>{
+  if (window.pageYOffset > 130) {
+    btntop.classList.add("top");
+  }else{
+    btntop.classList.remove("top");
+  }
+
+ });
