@@ -115,12 +115,20 @@ nav .fa-bars{
 .drop1{
     position: absolute;
     background-color: #fff;
-    top: 60px;
+    top: 50px;
     left: 66%;right: 18%;
     border-radius: 6px;
     box-shadow:  1 10 30 #000;
     transition: all .5s ease-in-out;
-transform: translateX(5rem);
+transform: translateY(2rem);
+opacity: 0;
+visibility: hidden;
+}
+.drop-item:hover .drop1{
+    transform: translateY(0);
+    transition: all .5s ease-in-out;
+    opacity: 1;
+    visibility: visible;
 }
 .drop1 li{
     width: 100%;
@@ -140,13 +148,21 @@ transform: translateX(5rem);
 }
 .drop2{
     position: absolute;
-    
     background-color: #fff;
     top: 20px;
     left: -100%;right: 100%;
     border-radius: 6px;
     box-shadow:  1 10 30 #000;
     transition: all .5s ease-in-out;
+    opacity: 0;
+    transform: translateX(1rem);
+    visibility: hidden;
+}
+.drop-item2:hover .drop2{
+    transition: all .5s ease-in-out;
+    transform: translateX(0rem);
+    opacity: 1;
+    visibility: visible;
 }
 .drop2 li{
     width: 100%;
