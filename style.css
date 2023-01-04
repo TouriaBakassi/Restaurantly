@@ -986,10 +986,41 @@ width: 49%;
         border: .3px solid #cda45e;
     }   
 /* .....................Sect Contact End.......... */
-/* .....................Sect  Start........ */
+/* .....................Sect Footer Start........ */
+.sect-footer{
+    width: 100%;
+padding: 60px 100px;
+background-color: #0c0b09;
+border-top:1px solid #625b4b ;
+border-bottom:1px solid #625b4b ;
+display: flex;justify-content: space-between;
+}
+.restaurantly-info{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.useful-links{
+    width: 20%;
+}
+.our-services{
+    width: 20%;
+}
+.useful-links li, .our-services li{
+    width: 100%;
+    padding-bottom: 10px;
+}
+.newsletter{
+    width: 35%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
 
 
-/* .....................Sect  End.......... */
+
+/* .....................Sect Footer End.......... */
 /* .....................Sect  Start........ */
 
 
