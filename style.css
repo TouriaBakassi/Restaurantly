@@ -936,7 +936,7 @@ flex-wrap: wrap;
     font-size: 18px;
     font-weight: 500;
 }
-.address-info pre{
+.address-info p{
     font-size: 13px;
     font-weight: 500;
     color: #b1aa9a;
@@ -946,11 +946,12 @@ flex-wrap: wrap;
 }
 .form-row{
     width: 100%;
-    margin: 0px 0px 25px 0px;
+    margin: 0px 0px 10px 0px;
     display: flex;justify-content: center;
 }
 .form-row input, .form-row textarea{
     padding: 12px;
+    margin: 0px 0px 20px;
     outline:none;
     border: .3px solid #625b4b;
     background-color: #0c0b09;
@@ -1073,6 +1074,11 @@ width: 49%;
         padding: 60px;
      }
 /* .....................Sect Events End.......... */
+/* .....................Sect Gallery Start........ */
+.sect-gallery .titles{
+    padding:0px 60px 45px 60px; 
+ }
+/* .....................Sect Gallery End.......... */
 /* .....................Sect Chefs Start.......... */
 
 .sect-chefs{
@@ -1080,8 +1086,12 @@ width: 49%;
 }
 /* .....................Sect Chefs End.......... */
 /* .....................Sect Contact Start........ */
+.sect-contact .titles{
+    width: 100%;
+    padding: 60px;
+}
 .contact{
-    padding: 60px 50px;
+    padding: 60px;
     }  
 
 /* .....................Sect Contact End.......... */
@@ -1136,6 +1146,15 @@ width: 49%;
     padding: 60px;
 }
 /* .....................Sect  End.......... */
+/* .....................Sect Gallery Start........ */
+
+ .gallery-item{
+     width: 33%;
+    }
+.sect-gallery .titles{
+    padding:0px 60px 45px 60px; 
+ }
+ /* .....................Sect Gallery End.......... */
 /* .....................Sect Chefs Start........ */
 .sect-chefs{
    padding: 60px;
@@ -1146,6 +1165,13 @@ width: 49%;
 .sect-contact{
    padding: 60px 0px;
 }
+.sect-contact .titles{
+    width: 100%;
+    padding: 60px;
+}
+.contact{
+    padding: 60px;
+    }  
 .address{
     width: 100%;
 } 
@@ -1361,6 +1387,15 @@ width: 100%;
     margin: 20px 0px;
 }
 /* .....................Sect Table End.......... */
+/* .....................Sect Gallery Start........ */
+
+.gallery-item{
+    width: 100%;
+   }
+.sect-gallery .titles{
+    padding:0px 20px 45px 20px; 
+ }
+/* .....................Sect Gallery End.......... */
 /* .....................Sect Testimonials Start........ */
 .sect-testimonials{
     padding: 60px 20px;
@@ -1381,6 +1416,13 @@ width: 100%;
 .sect-contact{
    padding: 60px 0px;
 }
+.sect-contact .titles{
+    width: 100%;
+    padding: 60px 20px;
+}
+.contact{
+    padding: 60px 20px;
+    }  
 .form-row1 input{
     width: 100%;
     }
