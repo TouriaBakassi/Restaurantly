@@ -766,7 +766,7 @@ transition: all .5s ease-in-out;
 .sect-gallery .gallery{
     width: 100%;
     padding: 0px 15px; 
-    display: flex;justify-content: center;
+    display: flex;justify-content: flex-start;
     flex-wrap: wrap;
 }
 .gallery-item{
@@ -791,7 +791,7 @@ transition: all .5s ease-in-out;
 /* .....................Sect Chefs Start........ */
 .sect-chefs{
     width: 100%;
-    padding: 60px 100px;
+    padding: 60px 100px 30px 100px;
     background-color: #0c0b09; 
 }
 .chefs{
@@ -806,7 +806,7 @@ padding: 45px 0px 0px 0px;
     position: relative;
     /* border: 1px solid red; */
     overflow: hidden;
-    margin: 10px ;
+    margin:20px 10px ;
 }
 .chefs-item img{
     width: 100%;  vertical-align: middle;
@@ -886,12 +886,12 @@ transform: translateY(60%);
 /* .....................Sect Contact Start........ */
 .sect-contact{
     width: 100%;
-    padding: 20px 0px 60px 0px;
+    padding: 20px 0px;
     background-color: #0c0b09; 
 }
 .sect-contact .titles{
     width: 100%;
-    padding: 60px 100px;
+    padding: 10px 100px 60px 100px;
 }
 .map{
 width: 100%;
@@ -951,7 +951,7 @@ flex-wrap: wrap;
 }
 .form-row input, .form-row textarea{
     padding: 12px;
-    margin: 0px 0px 20px;
+    margin: 0px 0px 30px;
     outline:none;
     border: .3px solid #625b4b;
     background-color: #0c0b09;
@@ -1159,7 +1159,9 @@ width: 49%;
 .sect-chefs{
    padding: 60px;
 }
-
+.chefs-item{
+    width: 30%;
+}
 /* .....................Sect Chefs End.......... */
 /* .....................Sect Contact Start........ */
 .sect-contact{
@@ -1177,6 +1179,7 @@ width: 49%;
 } 
 .formu{
     width: 100%;
+    padding-top: 30px;
 }
 /* .....................Sect Contact End.......... */
  }  
