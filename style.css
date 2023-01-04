@@ -994,12 +994,37 @@ background-color: #0c0b09;
 border-top:1px solid #625b4b ;
 border-bottom:1px solid #625b4b ;
 display: flex;justify-content: space-between;
+flex-wrap: wrap;
 }
 .restaurantly-info{
     width: 25%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+}
+.restaurantly-info h3{
+    font-size: 25px;
+    font-weight: 300;
+}
+.restaurantly-info .address ,.restaurantly-info .phone{
+    width: 100%;
+    font-size: 14px;
+    font-family: 'Playfair Display', serif;
+}
+.restaurantly-info .phone span{
+    font-size: 14px;
+    font-weight: 700;
+}
+.restaurantly-info .reseaux-sociaux i{
+    font-size: 15px;
+    padding: 11px;
+    background-color: #28251f;
+    border-radius: 50%;
+    margin-right: 3px;
+    transition: all .5s ease-out ;
+}
+.restaurantly-info .reseaux-sociaux i:hover{
+    background-color: #cda45e;
 }
 .useful-links{
     width: 20%;
@@ -1009,7 +1034,17 @@ display: flex;justify-content: space-between;
 }
 .useful-links li, .our-services li{
     width: 100%;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
+   font-size: 14px;
+   transition: all .5s ease-in-out;
+}
+.useful-links li:hover, .our-services li:hover{
+   color: #cda45e;
+}
+.useful-links i, .our-services i{
+    padding-right: 5px;
+   font-size: 10px;
+   color: #cda45e;
 }
 .newsletter{
     width: 35%;
@@ -1017,8 +1052,52 @@ display: flex;justify-content: space-between;
     justify-content: flex-start;
     flex-direction: column;
 }
-
-
+.newsletter p{
+    font-size: 14px;
+    padding: 10px 0px;
+    font-family: "Open Sans",sans-serif;
+}
+.useful-links li:nth-child(1), .our-services li:nth-child(1), #newsletter-title{
+    font-family: 'Playfair Display', serif;
+ font-size: 16px;
+ font-weight: 600;
+ color: #fff;
+ padding-top: 0px;
+}
+.newsletter .subscribe{
+    width: 90%;
+    background-color: #28251f;
+    padding: 5px 10px;
+    border-radius: 40px;
+    position: relative;
+    margin: 30px 0px;
+    align-content: flex-end;
+}
+.subscribe input{
+    position: relative;
+    width: 70%;
+    padding: 9px 10px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background-color: #28251f;
+}
+.subscribe input:focus{
+   outline: 1px solid #fff; 
+}
+.subscribe a{
+    width: 35%;
+    display: inline-block;
+    padding: 8px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #cda45e;
+    border-radius: 40px;
+    position: absolute;
+    top: 0; right:0; bottom: 0;
+    left: 70%;
+    text-align: center;
+}
 
 /* .....................Sect Footer End.......... */
 /* .....................Sect  Start........ */
@@ -1126,6 +1205,12 @@ display: flex;justify-content: space-between;
     }  
 
 /* .....................Sect Contact End.......... */
+/* .....................Sect Footer End.......... */
+
+.sect-footer{
+    padding: 60px;
+    }
+    /* .....................Sect Footer End.......... */
 /* .....................Sect Contact Start........ */
 
 
@@ -1213,6 +1298,18 @@ display: flex;justify-content: space-between;
     padding-top: 30px;
 }
 /* .....................Sect Contact End.......... */
+/* .....................Sect Footer End.......... */
+
+.sect-footer{
+padding: 60px;
+}
+.footer-item{
+   width: 50%;
+   padding: 30px 20px;
+}
+
+/* .....................Sect Footer End.......... */
+
  }  
 
 
@@ -1461,7 +1558,15 @@ width: 100%;
     width: 100%;
     }
 /* .....................Sect Contact End.......... */
-   
+/* .....................Sect Footer End.......... */
+
+.sect-footer{
+    padding: 60px 20px;
+    }
+    .footer-item{
+      width: 100%;  
+    }
+/* .....................Sect Footer End.......... */  
 /* .....................Sect  End.......... */
 /* .....................Sect  End.......... */
 /* .....................Sect  End.......... */
