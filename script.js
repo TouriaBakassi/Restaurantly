@@ -206,3 +206,15 @@ let btntop=document.querySelector(".btn-to-top");
   }
 
  });
+
+// .................................NAVBAR
+let bar=document.querySelector(".bar");
+let xmmark=document.querySelector(".xmark");
+let navbar=document.querySelector(".navbar");
+ 
+  bar.addEventListener("click",()=>{
+navbar.classList.add("open");
+ });
+ xmmark.addEventListener("click",()=>{
+  navbar.classList.remove("open");
+ });

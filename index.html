@@ -21,7 +21,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./lightbox/simple-lightbox.css">
+    <link rel="stylesheet" href="./lightbox/simple-lightbox.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Restaurant</title>
   </head>
@@ -50,29 +50,65 @@
             <li><a class="navcle" href="#l">Events</a></li>
             <li><a class="navcle" href="#l">Chefs</a></li>
             <li><a class="navcle" href="#l">Gallery</a></li>
-            <li class="drop-item"><a class="navcle drop-down" href="#l">Drop Down</a>        
+            <li class="drop-item">
+              <a class="navcle drop-down" href="#l">Drop Down</a>
               <ul class="drop1">
                 <li>loremmmmmmm</li>
-                <li class="drop-item2">loremmmmmmm<i class="fa-solid fa-chevron-right"></i>
-                <ul class="drop2">
-                  <li>droooopppp</li>
-                  <li>droooopppp</li>
-                  <li>droooopppp</li>
-                  <li>droooopppp</li>
-                  <li>droooopppp</li>
-                </ul>
+                <li class="drop-item2">
+                  loremmmmmmm<i class="fa-solid fa-chevron-right"></i>
+                  <ul class="drop2">
+                    <li>droooopppp</li>
+                    <li>droooopppp</li>
+                    <li>droooopppp</li>
+                    <li>droooopppp</li>
+                    <li>droooopppp</li>
+                  </ul>
                 </li>
                 <li>loremmmmmmm</li>
                 <li>loremmmmmmm</li>
                 <li>loremmmmmmm</li>
               </ul>
-     
             </li>
             <li><a class="navcle" href="#l">Contact</a></li>
             <li><a class="navcle" id="book" href="#l">BOOK A TABLE</a></li>
           </ul>
-          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars bar"></i>
         </nav>
+        <div class="navbar">
+          <i class="fa-solid fa-xmark xmark"></i>
+          <ul>
+            <li><a class="navcle active" href="#sect-home"> Home</a></li>
+            <li><a class="navcle" href="#l">About</a></li>
+            <li><a class="navcle" href="#l">Menu</a></li>
+            <li><a class="navcle" href="#l">Specials</a></li>
+            <li><a class="navcle" href="#l">Events</a></li>
+            <li><a class="navcle" href="#l">Chefs</a></li>
+            <li><a class="navcle" href="#l">Gallery</a></li>
+            <li>
+              <details>
+                <summary><a class="navcle" href="#l">Drop Down</a></summary>
+                <ul>
+                  <li>llkkiokkjj</li>
+                  <li>
+                    <details>
+                      <summary>lkkiokkjj</summary>
+                      <ul>
+                        <li>itemmm</li>
+                        <li>itemmm</li>
+                        <li>itemmm</li>
+                        <li>itemmm</li>
+                      </ul>
+                    </details>
+                  </li>
+                  <li>lkkiokkjj</li>
+                  <li>lkkiokkjj</li>
+                </ul>
+              </details>
+            </li>
+            <li><a class="navcle" href="#l">Contact</a></li>
+            <li><a class="navcle" id="book" href="#l">BOOK A TABLE</a></li>
+          </ul>
+        </div>
         <div class="welcome">
           <div class="introduction">
             <h1>Welcome to <span>Restaurantly</span></h1>
@@ -100,7 +136,6 @@
           <video
             src="./image/Bezdan 21 restaurant promo video.mp4"
             controls
-           
           ></video>
         </div>
       </div>
@@ -203,8 +238,12 @@
           <li class="menu-item all starter">
             <img src="./image/lobster-bisque 1.jpg" alt="" />
             <span class="menu-item-info">
-              <h4>Lobster Bisque <span class="point">............................................</span><span class="prix"> $5.95</span>
-             </h4>
+              <h4>
+                Lobster Bisque
+                <span class="point"
+                  >............................................</span
+                ><span class="prix"> $5.95</span>
+              </h4>
               <p>Lorem, deren, trataro, filede, nerada</p>
             </span>
           </li>
@@ -212,7 +251,9 @@
             <img src="./image/cake 2.jpg" alt="" />
             <span class="menu-item-info">
               <h4>
-                Crab Cake<span class="point">......................................................</span><span class="prix"> $7.95</span>
+                Crab Cake<span class="point"
+                  >......................................................</span
+                ><span class="prix"> $7.95</span>
               </h4>
               <p>
                 A delicate crab cake served on a toasted roll with lettuce and
@@ -226,7 +267,9 @@
             </div>
             <span class="menu-item-info">
               <h4>
-                Tuscan Grilled<span class="point">..............................................</span><span class="prix">$9.95</span>
+                Tuscan Grilled<span class="point"
+                  >..............................................</span
+                ><span class="prix">$9.95</span>
               </h4>
               <p>
                 Grilled chicken with provolone, artichoke hearts, and roasted
@@ -240,7 +283,9 @@
             </div>
             <span class="menu-item-info">
               <h4>
-                Greek Salad<span class="point">...................................................</span><span class="prix">$9.95</span>
+                Greek Salad<span class="point"
+                  >...................................................</span
+                ><span class="prix">$9.95</span>
               </h4>
               <p>Fresh spinach, crisp romaine, tomatoes, and Greek olives</p>
             </span>
@@ -251,7 +296,9 @@
             </div>
             <span class="menu-item-info">
               <h4>
-                Lobster Roll<span class="point">....................................................</span><span class="prix">$12.95</span>
+                Lobster Roll<span class="point"
+                  >....................................................</span
+                ><span class="prix">$12.95</span>
               </h4>
               <p>
                 Plump lobster meat, mayo and crisp lettuce on a toasted bulky
@@ -265,7 +312,9 @@
             </div>
             <span class="menu-item-info">
               <h4>
-                Bread Barrel<span class="point">...................................................</span><span class="prix">$6.95</span>
+                Bread Barrel<span class="point"
+                  >...................................................</span
+                ><span class="prix">$6.95</span>
               </h4>
               <p>Lorem, deren, trataro, filede, nerada</p>
             </span>
@@ -276,7 +325,9 @@
             </div>
             <span class="menu-item-info">
               <h4>
-                Caesar Selections<span class="point">.......................................</span><span class="prix">$8.95</span>
+                Caesar Selections<span class="point"
+                  >.......................................</span
+                ><span class="prix">$8.95</span>
               </h4>
               <p>Lorem, deren, trataro, filede, nerada</p>
             </span>
@@ -287,7 +338,9 @@
             </div>
             <span class="menu-item-info">
               <h4>
-                Mozzarella Stick<span class="point">............................................</span><span class="prix">$4.95</span>
+                Mozzarella Stick<span class="point"
+                  >............................................</span
+                ><span class="prix">$4.95</span>
               </h4>
               <p>Lorem, deren, trataro, filede, nerada</p>
             </span>
@@ -298,7 +351,9 @@
             </div>
             <span class="menu-item-info">
               <h4>
-                Spinach Salad<span class="point">.............................................</span><span class="prix">$9.95</span>
+                Spinach Salad<span class="point"
+                  >.............................................</span
+                ><span class="prix">$9.95</span>
               </h4>
               <p>
                 Fresh spinach with mushrooms, hard boiled egg, and warm bacon
@@ -318,389 +373,545 @@
         <h2>Check Our Specials</h2>
       </div>
 
-<div class="specials">
-  <ul class="specials-titles">
-    <li class="special-key key1 active">Modi sit est</li>
-    <li class="special-key key2">Unde praesentium sed</li>
-    <li class="special-key key3">Pariatur explicabo vel</li>
-    <li class="special-key key4">Nostrum qui quasi</li>
-    <li class="special-key key5">Iusto ut expedita aut</li>
-  </ul>
-  <!-- 
+      <div class="specials">
+        <ul class="specials-titles">
+          <li class="special-key key1 active">Modi sit est</li>
+          <li class="special-key key2">Unde praesentium sed</li>
+          <li class="special-key key3">Pariatur explicabo vel</li>
+          <li class="special-key key4">Nostrum qui quasi</li>
+          <li class="special-key key5">Iusto ut expedita aut</li>
+        </ul>
+        <!-- 
 
    -->
-  <div class="all-specials">
-  <div class="special-content content1 open">
-    <div class="content">
-    <h3>Architecto ut aperiam autem id</h3>
-    <p><em>Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</em></p>
-    <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
-    </div>
-    <div class="special-image"><img src="./image/specials-1.png" alt=""></div>
-  </div>
-  <div class="special-content content2">
-    <div class="content">
-    <h3>Et blanditiis nemo veritatis excepturi</h3>
-    <p><em>Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</em></p>
-    <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
-    </div>
-    <div class="special-image"><img src="./image/specials-2.png" alt=""></div>
-  </div>
-  <div class="special-content content3">
-    <div class="content">
-    <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
-    <p><em>Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</em></p>
-    <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
-    </div>
-    <div class="special-image"><img src="./image/specials-3.png" alt=""></div>
-  </div>
-  <div class="special-content content4">
-    <div class="content">
-    <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
-    <p><em>Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</em></p>
-    <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p>
-    </div>
-    <div class="special-image"><img src="./image/specials-4.png" alt=""></div>
-  </div>
-  <div class="special-content content5">
-    <div class="content">
-    <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
-    <p><em>Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</em></p>
-    <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
-    </div>
-    <div class="special-image">
-      <img src="./image/specials-5.png" alt="">
-    </div>
-  </div>
-  </div>
-</div>
+        <div class="all-specials">
+          <div class="special-content content1 open">
+            <div class="content">
+              <h3>Architecto ut aperiam autem id</h3>
+              <p>
+                <em
+                  >Qui laudantium consequatur laborum sit qui ad sapiente dila
+                  parde sonata raqer a videna mareta paulona marka</em
+                >
+              </p>
+              <p>
+                Et nobis maiores eius. Voluptatibus ut enim blanditiis atque
+                harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut
+                molestiae aut qui. Est repellat minima eveniet eius et quis
+                magni nihil. Consequatur dolorem quaerat quos qui similique
+                accusamus nostrum rem vero
+              </p>
+            </div>
+            <div class="special-image">
+              <img src="./image/specials-1.png" alt="" />
+            </div>
+          </div>
+          <div class="special-content content2">
+            <div class="content">
+              <h3>Et blanditiis nemo veritatis excepturi</h3>
+              <p>
+                <em
+                  >Qui laudantium consequatur laborum sit qui ad sapiente dila
+                  parde sonata raqer a videna mareta paulona marka</em
+                >
+              </p>
+              <p>
+                Ea ipsum voluptatem consequatur quis est. Illum error ullam
+                omnis quia et reiciendis sunt sunt est. Non aliquid repellendus
+                itaque accusamus eius et velit ipsa voluptates. Optio nesciunt
+                eaque beatae accusamus lerode pakto madirna desera vafle de
+                nideran pal
+              </p>
+            </div>
+            <div class="special-image">
+              <img src="./image/specials-2.png" alt="" />
+            </div>
+          </div>
+          <div class="special-content content3">
+            <div class="content">
+              <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
+              <p>
+                <em
+                  >Eos voluptatibus quo. Odio similique illum id quidem non enim
+                  fuga. Qui natus non sunt dicta dolor et. In asperiores velit
+                  quaerat perferendis aut</em
+                >
+              </p>
+              <p>
+                Iure officiis odit rerum. Harum sequi eum illum corrupti culpa
+                veritatis quisquam. Neque necessitatibus illo rerum eum ut.
+                Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum
+                odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio
+                quae
+              </p>
+            </div>
+            <div class="special-image">
+              <img src="./image/specials-3.png" alt="" />
+            </div>
+          </div>
+          <div class="special-content content4">
+            <div class="content">
+              <h3>
+                Fuga dolores inventore laboriosam ut est accusamus laboriosam
+                dolore
+              </h3>
+              <p>
+                <em
+                  >Totam aperiam accusamus. Repellat consequuntur iure voluptas
+                  iure porro quis delectus</em
+                >
+              </p>
+              <p>
+                Eaque consequuntur consequuntur libero expedita in voluptas.
+                Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit.
+                Eum ex maxime error in consequatur corporis atque. Eligendi
+                asperiores sed qui veritatis aperiam quia a laborum inventore
+              </p>
+            </div>
+            <div class="special-image">
+              <img src="./image/specials-4.png" alt="" />
+            </div>
+          </div>
+          <div class="special-content content5">
+            <div class="content">
+              <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+              <p>
+                <em
+                  >Omnis blanditiis saepe eos autem qui sunt debitis porro
+                  quia.</em
+                >
+              </p>
+              <p>
+                Exercitationem nostrum omnis. Ut reiciendis repudiandae minus.
+                Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit
+                vero atque qui quibusdam amet. Occaecati sed est sint aut vitae
+                molestiae voluptate vel
+              </p>
+            </div>
+            <div class="special-image">
+              <img src="./image/specials-5.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- ............... Specials Section End ................. -->
     <!-- ............... Events Section Start ................. -->
-<div class="sect-events">
-  <div class="titles">
-    <h4>SPECIALS<span class="line"></span></h4>
-    <h2>Check Our Specials</h2>
-  </div>
-  <div class="swiper mySwiper">
-<div class="swiper-wrapper events">
-  <div class="swiper-slide event">
-    <div class="event-image"><img src="./image/event-birthday.jpg" alt="event-birthday"></div>
-    <ul class="event-description">
-      <li>Birthday Parties</li>
-      <li>$189</li>
-      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-      <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-      <li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-      <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-      <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</li>
-    </ul>
-  </div>
-  <div class="swiper-slide event">
-    <div class="event-image"><img src="./image/event-private.jpg" alt="event-private"></div>
-    <ul class="event-description">
-      <li>Private Parties</li>
-      <li>$290</li>
-      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-      <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-      <li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-      <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-      <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</li>
-    
-    </ul>
-  </div>
-  <div class="swiper-slide event">
-    <div class="event-image"><img src="./image/event-custom.jpg" alt="event-custom"></div>
-    <ul class="event-description">
-      <li>Custom Parties</li>
-      <li>$99</li>
-      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-      <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-      <li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-      <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-      <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</li>
-    
-    </ul>
-  </div>
-</div>
-<div class="swiper-pagination"></div>
-</div>
-</div>
+    <div class="sect-events">
+      <div class="titles">
+        <h4>SPECIALS<span class="line"></span></h4>
+        <h2>Check Our Specials</h2>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper events">
+          <div class="swiper-slide event">
+            <div class="event-image">
+              <img src="./image/event-birthday.jpg" alt="event-birthday" />
+            </div>
+            <ul class="event-description">
+              <li>Birthday Parties</li>
+              <li>$189</li>
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </li>
+              <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li>
+                Duis aute irure dolor in reprehenderit in voluptate velit.
+              </li>
+              <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur
+              </li>
+            </ul>
+          </div>
+          <div class="swiper-slide event">
+            <div class="event-image">
+              <img src="./image/event-private.jpg" alt="event-private" />
+            </div>
+            <ul class="event-description">
+              <li>Private Parties</li>
+              <li>$290</li>
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </li>
+              <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li>
+                Duis aute irure dolor in reprehenderit in voluptate velit.
+              </li>
+              <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur
+              </li>
+            </ul>
+          </div>
+          <div class="swiper-slide event">
+            <div class="event-image">
+              <img src="./image/event-custom.jpg" alt="event-custom" />
+            </div>
+            <ul class="event-description">
+              <li>Custom Parties</li>
+              <li>$99</li>
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </li>
+              <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li>
+                Duis aute irure dolor in reprehenderit in voluptate velit.
+              </li>
+              <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
     <!-- ............... Events Section End ................. -->
     <!-- ............... Table Section End ................. -->
-<div class="sect-table">
-  <div class="titles">
-    <h4>RESERVATION<span class="line"></span></h4>
-    <h2>Book a Table</h2>
-  </div>
-  <div class="table">
-    <div class="row">
-      <input type="text" placeholder="Your Name">
-      <input type="email" placeholder="Your Email">
-      <input type="tel" placeholder="Your Phone">
+    <div class="sect-table">
+      <div class="titles">
+        <h4>RESERVATION<span class="line"></span></h4>
+        <h2>Book a Table</h2>
+      </div>
+      <div class="table">
+        <div class="row">
+          <input type="text" placeholder="Your Name" />
+          <input type="email" placeholder="Your Email" />
+          <input type="tel" placeholder="Your Phone" />
+        </div>
+        <div class="row">
+          <input type="text" placeholder="Date" />
+          <input type="text" placeholder="Time" />
+          <input type="number" placeholder="# of people" />
+        </div>
+        <div class="row">
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="12"
+            placeholder="Message"
+          ></textarea>
+        </div>
+        <div class="row row-btn">
+          <a href="#btn">Book a Table</a>
+        </div>
+      </div>
     </div>
-    <div class="row">
-      <input type="text" placeholder="Date">
-      <input type="text" placeholder="Time">
-      <input type="number" placeholder="# of people">
-    </div>
-    <div class="row">
-    <textarea name="" id="" cols="30" rows="12" placeholder="Message"></textarea>
-    </div>
-    <div class="row row-btn">
-<a href="#btn">Book a Table</a>
-    </div>
-  </div>
-</div>
     <!-- ............... Table Section End ................. -->
     <!-- ............... TESTIMONIALS Section End ................. -->
-<div class="sect-testimonials">
-  <div class="titles">
-    <h4>TESTIMONIALS<span class="line"></span></h4>
-    <h2>What they're saying about us</h2>
-  </div>
-  <div class="swiper mySwiper2">
-<div class="all-testimonials swiper-wrapper">
- <div class="testimonial swiper-slide">
-  <div class="quote">
-    
-    <p><i class="fa-solid fa-quote-left"></i> Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim. 
-    <i class="fa-solid fa-quote-right"></i></p>
-    
-  </div>
-  <div class="author">
-    <img src="./image/testimonials-1.jpg" alt="testimonials-1">
-    <h4>Saul Goodman</h4>
-    <h5>Ceo & Founder</h5>
-  </div>
- </div>
- <div class="testimonial swiper-slide">
-  <div class="quote">
-    
-    <p><i class="fa-solid fa-quote-left"></i> Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim. 
-<i class="fa-solid fa-quote-right"></i>
-    </p>
-  </div>
-  <div class="author">
-    <img src="./image/testimonials-2.jpg" alt="testimonials-2">
-    <h4>Sara Wilsson</h4>
-    <h5>Designer</h5>
-  </div>
- </div>
- <div class="testimonial swiper-slide">
-  <div class="quote">
-    
-    <p><i class="fa-solid fa-quote-left"></i> Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim. 
-    <i class="fa-solid fa-quote-right"></i></p>
-    
-  </div>
-  <div class="author">
-    <img src="./image/testimonials-3.jpg" alt="testimonials-3">
-    <h4>Jena Karlis</h4>
-    <h5>Store Owner</h5>
-  </div>
- </div>
- <div class="testimonial swiper-slide">
-  <div class="quote">
-    
-    <p><i class="fa-solid fa-quote-left"></i> Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim. 
-    <i class="fa-solid fa-quote-right"></i></p>
-    
-  </div>
-  <div class="author">
-    <img src="./image/testimonials-4.jpg" alt="testimonials-4">
-    <h4>Matt Brandom</h4>
-    <h5>Freelancer</h5>
-  </div>
- </div>
- <div class="testimonial swiper-slide">
-  <div class="quote">
-    
-    <p><i class="fa-solid fa-quote-left"></i>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim. 
-    <i class="fa-solid fa-quote-right"></i></p>
-  </div>
-  <div class="author">
-    <img src="./image/testimonials-5.jpg" alt="testimonials-5">
-    <h4>John Larson</h4>
-    <h5>Entrepreneur</h5>
-  </div>
- </div>
-</div>
-</div>
-<div class="swiper-pagination2"></div>
-</div>
+    <div class="sect-testimonials">
+      <div class="titles">
+        <h4>TESTIMONIALS<span class="line"></span></h4>
+        <h2>What they're saying about us</h2>
+      </div>
+      <div class="swiper mySwiper2">
+        <div class="all-testimonials swiper-wrapper">
+          <div class="testimonial swiper-slide">
+            <div class="quote">
+              <p>
+                <i class="fa-solid fa-quote-left"></i> Enim nisi quem export
+                duis labore cillum quae magna enim sint quorum nulla quem veniam
+                duis minim tempor labore quem eram duis noster aute amet eram
+                fore quis sint minim. <i class="fa-solid fa-quote-right"></i>
+              </p>
+            </div>
+            <div class="author">
+              <img src="./image/testimonials-1.jpg" alt="testimonials-1" />
+              <h4>Saul Goodman</h4>
+              <h5>Ceo & Founder</h5>
+            </div>
+          </div>
+          <div class="testimonial swiper-slide">
+            <div class="quote">
+              <p>
+                <i class="fa-solid fa-quote-left"></i> Enim nisi quem export
+                duis labore cillum quae magna enim sint quorum nulla quem veniam
+                duis minim tempor labore quem eram duis noster aute amet eram
+                fore quis sint minim.
+                <i class="fa-solid fa-quote-right"></i>
+              </p>
+            </div>
+            <div class="author">
+              <img src="./image/testimonials-2.jpg" alt="testimonials-2" />
+              <h4>Sara Wilsson</h4>
+              <h5>Designer</h5>
+            </div>
+          </div>
+          <div class="testimonial swiper-slide">
+            <div class="quote">
+              <p>
+                <i class="fa-solid fa-quote-left"></i> Enim nisi quem export
+                duis labore cillum quae magna enim sint quorum nulla quem veniam
+                duis minim tempor labore quem eram duis noster aute amet eram
+                fore quis sint minim. <i class="fa-solid fa-quote-right"></i>
+              </p>
+            </div>
+            <div class="author">
+              <img src="./image/testimonials-3.jpg" alt="testimonials-3" />
+              <h4>Jena Karlis</h4>
+              <h5>Store Owner</h5>
+            </div>
+          </div>
+          <div class="testimonial swiper-slide">
+            <div class="quote">
+              <p>
+                <i class="fa-solid fa-quote-left"></i> Enim nisi quem export
+                duis labore cillum quae magna enim sint quorum nulla quem veniam
+                duis minim tempor labore quem eram duis noster aute amet eram
+                fore quis sint minim. <i class="fa-solid fa-quote-right"></i>
+              </p>
+            </div>
+            <div class="author">
+              <img src="./image/testimonials-4.jpg" alt="testimonials-4" />
+              <h4>Matt Brandom</h4>
+              <h5>Freelancer</h5>
+            </div>
+          </div>
+          <div class="testimonial swiper-slide">
+            <div class="quote">
+              <p>
+                <i class="fa-solid fa-quote-left"></i>Enim nisi quem export duis
+                labore cillum quae magna enim sint quorum nulla quem veniam duis
+                minim tempor labore quem eram duis noster aute amet eram fore
+                quis sint minim. <i class="fa-solid fa-quote-right"></i>
+              </p>
+            </div>
+            <div class="author">
+              <img src="./image/testimonials-5.jpg" alt="testimonials-5" />
+              <h4>John Larson</h4>
+              <h5>Entrepreneur</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination2"></div>
+    </div>
     <!-- ............... TESTIMONIALS Section End ................. -->
     <!-- ............... Gallery Section End ................. -->
-<div class="sect-gallery">
-  <div class="titles">
-    <h4>GALLERY<span class="line"></span></h4>
-    <h2>Some photos from Our Restaurant</h2>
-  </div>
-<div class="gallery">
-  <a href="./image/gallery-1.jpg" class="gallery-item"><img src="./image/gallery-1.jpg" alt="gallery-1"></a>
-  <a href="./image/gallery-2.jpg" class="gallery-item"><img src="./image/gallery-2.jpg" alt="gallery-2"></a>
-  <a href="./image/gallery-3.jpg" class="gallery-item"><img src="./image/gallery-3.jpg" alt="gallery-3"></a>
-  <a href="./image/gallery-4.jpg" class="gallery-item"><img src="./image/gallery-4.jpg" alt="gallery-4"></a>
-  <a href="./image/gallery-5.jpg" class="gallery-item"><img src="./image/gallery-5.jpg" alt="gallery-5"></a>
-  <a href="./image/gallery-6.jpg" class="gallery-item"><img src="./image/gallery-6.jpg" alt="gallery-6"></a>
-  <a href="./image/gallery-7.jpg" class="gallery-item"><img src="./image/gallery-7.jpg" alt="gallery-7"></a>
-  <a href="./image/gallery-8.jpg" class="gallery-item"><img src="./image/gallery-8.jpg" alt="gallery-8"></a>
-</div>
-</div>
+    <div class="sect-gallery">
+      <div class="titles">
+        <h4>GALLERY<span class="line"></span></h4>
+        <h2>Some photos from Our Restaurant</h2>
+      </div>
+      <div class="gallery">
+        <a href="./image/gallery-1.jpg" class="gallery-item"
+          ><img src="./image/gallery-1.jpg" alt="gallery-1"
+        /></a>
+        <a href="./image/gallery-2.jpg" class="gallery-item"
+          ><img src="./image/gallery-2.jpg" alt="gallery-2"
+        /></a>
+        <a href="./image/gallery-3.jpg" class="gallery-item"
+          ><img src="./image/gallery-3.jpg" alt="gallery-3"
+        /></a>
+        <a href="./image/gallery-4.jpg" class="gallery-item"
+          ><img src="./image/gallery-4.jpg" alt="gallery-4"
+        /></a>
+        <a href="./image/gallery-5.jpg" class="gallery-item"
+          ><img src="./image/gallery-5.jpg" alt="gallery-5"
+        /></a>
+        <a href="./image/gallery-6.jpg" class="gallery-item"
+          ><img src="./image/gallery-6.jpg" alt="gallery-6"
+        /></a>
+        <a href="./image/gallery-7.jpg" class="gallery-item"
+          ><img src="./image/gallery-7.jpg" alt="gallery-7"
+        /></a>
+        <a href="./image/gallery-8.jpg" class="gallery-item"
+          ><img src="./image/gallery-8.jpg" alt="gallery-8"
+        /></a>
+      </div>
+    </div>
     <!-- ............... Gallery Section End ................. -->
     <!-- ............... Chefs Section End .................... -->
-<div class="sect-chefs">
-  <div class="titles">
-    <h4>CHEFS<span class="line"></span></h4>
-    <h2>Our Proffesional Chefs</h2>
-  </div>
-  <div class="chefs">
-    <div class="chefs-item">
-      <img src="./image/chefs-1.jpg" alt="chefs-1">
-      <div class="chef-info">
-        <h4>Walter White</h4>
-        <p>Master Chef</p>
-        <div class="reseaux-social">
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-linkedin"></i>
+    <div class="sect-chefs">
+      <div class="titles">
+        <h4>CHEFS<span class="line"></span></h4>
+        <h2>Our Proffesional Chefs</h2>
+      </div>
+      <div class="chefs">
+        <div class="chefs-item">
+          <img src="./image/chefs-1.jpg" alt="chefs-1" />
+          <div class="chef-info">
+            <h4>Walter White</h4>
+            <p>Master Chef</p>
+            <div class="reseaux-social">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+        <div class="chefs-item">
+          <img src="./image/chefs-2.jpg" alt="chefs-2" />
+          <div class="chef-info">
+            <h4>Sarah Jhonson</h4>
+            <p>Patissier</p>
+            <div class="reseaux-social">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+        <div class="chefs-item">
+          <img src="./image/chefs-3.jpg" alt="chefs-3" />
+          <div class="chef-info">
+            <h4>William Anderson</h4>
+            <p>Cook</p>
+            <div class="reseaux-social">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="chefs-item">
-      <img src="./image/chefs-2.jpg" alt="chefs-2">
-      <div class="chef-info">
-        <h4>Sarah Jhonson</h4>
-        <p>Patissier</p>
-        <div class="reseaux-social">
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-linkedin"></i>
-        </div>
-      </div>
-    </div>
-    <div class="chefs-item">
-      <img src="./image/chefs-3.jpg" alt="chefs-3">
-      <div class="chef-info">
-        <h4>William Anderson</h4>
-        <p>Cook</p>
-        <div class="reseaux-social">
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-linkedin"></i>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
     <!-- ............... Chefs Section End .................... -->
     <!-- ............... Contact Section End ................. -->
-<div class="sect-contact">
-  <div class="titles">
-    <h4>CONTACT<span class="line"></span></h4>
-    <h2>Contact Us</h2>
-  </div>
-  <div class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96779.40849915502!2d-74.07617826365441!3d40.71016756205765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sfr!2sma!4v1672770514856!5m2!1sfr!2sma" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
-  </div>
-  <div class="contact">
-    <div class="address">
-      <div class="address-item">
-        <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
-        <div class="address-info">
-          <h4>Location:</h4>
-          <p>A108 Adam Street, New York, NY 535022</p>
-        </div>
+    <div class="sect-contact">
+      <div class="titles">
+        <h4>CONTACT<span class="line"></span></h4>
+        <h2>Contact Us</h2>
       </div>
-      <div class="address-item">
-        <div class="icon"><i class="fa-regular fa-clock"></i></div>
-        <div class="address-info">
-          <h4>Open Hours:</h4>
-          <p>Monday-Saturday:</p>
-          <p>11:00 AM - 2300 PM</p>
-        </div>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96779.40849915502!2d-74.07617826365441!3d40.71016756205765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sfr!2sma!4v1672770514856!5m2!1sfr!2sma"
+          width="600"
+          height="350"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
-      <div class="address-item">
-        <div class="icon"><i class="fa-regular fa-envelope"></i></div>
-        <div class="address-info">
-          <h4>Email:</h4>
-          <p>info@example.com</p>
+      <div class="contact">
+        <div class="address">
+          <div class="address-item">
+            <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="address-info">
+              <h4>Location:</h4>
+              <p>A108 Adam Street, New York, NY 535022</p>
+            </div>
+          </div>
+          <div class="address-item">
+            <div class="icon"><i class="fa-regular fa-clock"></i></div>
+            <div class="address-info">
+              <h4>Open Hours:</h4>
+              <p>Monday-Saturday:</p>
+              <p>11:00 AM - 2300 PM</p>
+            </div>
+          </div>
+          <div class="address-item">
+            <div class="icon"><i class="fa-regular fa-envelope"></i></div>
+            <div class="address-info">
+              <h4>Email:</h4>
+              <p>info@example.com</p>
+            </div>
+          </div>
+          <div class="address-item">
+            <div class="icon">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <div class="address-info">
+              <h4>Call:</h4>
+              <p>+1 5589 55488 55s</p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="address-item">
-        <div class="icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
-        <div class="address-info">
-          <h4>Call:</h4>
-          <p>+1 5589 55488 55s</p>
-        </div>
+        <form class="formu" action="#set" method="post">
+          <div class="form-row form-row1">
+            <input type="text" placeholder="Your Name" /><input
+              type="email"
+              placeholder="Your Email"
+            />
+          </div>
+          <div class="form-row form-row2">
+            <input type="text" placeholder="Subject" />
+          </div>
+          <div class="form-row form-row3">
+            <textarea cols="30" rows="10" placeholder="Message"></textarea>
+          </div>
+          <div class="form-row row-btn">
+            <a href="#message">Send Message</a>
+          </div>
+        </form>
       </div>
     </div>
-    <form class="formu" action="#set" method="post">
-      <div class="form-row form-row1"><input type="text" placeholder="Your Name"><input type="email" placeholder="Your Email"></div>
-<div class="form-row form-row2"><input type="text" placeholder="Subject"></div>
-<div class="form-row form-row3"><textarea cols="30" rows="10" placeholder="Message"></textarea></div>
-<div class="form-row row-btn"><a href="#message">Send Message</a></div>
-
-    </form>
-  </div>
-</div>
     <!-- ............... Contact Section End ................. -->
-     <!-- ............... Footer Section End ................. -->
-<div class="sect-footer">
-  <div class="footer-item restaurantly-info">
-    <h3>RESTAURANTLY</h3>
-    <div class="address">
-      <p>A108 Adam Street</p>
-      <p>NY 535022, USA</p>
-    </div>
-    <div class="phone">
-      <p><span>Phone:</span> +1 5589 55488 55</p>
-      <p><span>Email:</span> info@example.com</p>
-    </div>
-    <div class="reseaux-sociaux">
+    <!-- ............... Footer Section End ................. -->
+    <div class="sect-footer">
+      <div class="footer-item restaurantly-info">
+        <h3>RESTAURANTLY</h3>
+        <div class="address">
+          <p>A108 Adam Street</p>
+          <p>NY 535022, USA</p>
+        </div>
+        <div class="phone">
+          <p><span>Phone:</span> +1 5589 55488 55</p>
+          <p><span>Email:</span> info@example.com</p>
+        </div>
+        <div class="reseaux-sociaux">
           <i class="fa-brands fa-twitter"></i>
           <i class="fa-brands fa-facebook"></i>
           <i class="fa-brands fa-instagram"></i>
           <i class="fa-brands fa-skype"></i>
           <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+      </div>
+      <ul class="footer-item useful-links">
+        <li>Useful Links</li>
+        <li><i class="fa-solid fa-chevron-right"></i>Home</li>
+        <li><i class="fa-solid fa-chevron-right"></i>About us</li>
+        <li><i class="fa-solid fa-chevron-right"></i>Services</li>
+        <li><i class="fa-solid fa-chevron-right"></i>Terms of service</li>
+        <li><i class="fa-solid fa-chevron-right"></i>Privacy policy</li>
+      </ul>
+      <ul class="footer-item our-services">
+        <li>Our Services</li>
+        <li><i class="fa-solid fa-chevron-right"></i>Web Design</li>
+        <li><i class="fa-solid fa-chevron-right"></i>Web Development</li>
+        <li><i class="fa-solid fa-chevron-right"></i>Product Management</li>
+        <li><i class="fa-solid fa-chevron-right"></i>Marketing</li>
+        <li><i class="fa-solid fa-chevron-right"></i>Graphic Design</li>
+      </ul>
+      <div class="footer-item newsletter">
+        <p id="newsletter-title">Our Newsletter</p>
+        <p>
+          Tamen quem nulla quae legam multos aute sint culpa legam noster magna
+        </p>
+        <div class="subscribe">
+          <input type="text" /><a href="#subscribe">Subscribe</a>
+        </div>
+      </div>
     </div>
-  </div>
-  <ul class="footer-item useful-links" >
-    <li>Useful Links</li>
-    <li><i class="fa-solid fa-chevron-right"></i>Home</li>
-    <li><i class="fa-solid fa-chevron-right"></i>About us</li>
-    <li><i class="fa-solid fa-chevron-right"></i>Services</li>
-    <li><i class="fa-solid fa-chevron-right"></i>Terms of service</li>
-    <li><i class="fa-solid fa-chevron-right"></i>Privacy policy</li>
-  </ul>
-  <ul class="footer-item our-services">
-    <li>Our Services</li>
-    <li><i class="fa-solid fa-chevron-right"></i>Web Design</li>
-    <li><i class="fa-solid fa-chevron-right"></i>Web Development</li>
-    <li><i class="fa-solid fa-chevron-right"></i>Product Management</li>
-    <li><i class="fa-solid fa-chevron-right"></i>Marketing</li>
-    <li><i class="fa-solid fa-chevron-right"></i>Graphic Design</li>
-  </ul>
-  <div class="footer-item newsletter">
-    <p id="newsletter-title">Our Newsletter</p>
-    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-    <div class="subscribe"><input type="text"><a href="#subscribe">Subscribe</a></div>
-  </div>
-</div>
     <!-- ............... Footer Section End ................. -->
     <!-- ............... CopyRight Section End ................. -->
-<footer>
-  <p class="first-line">&copy; Copyright<span> Restaurantly.</span> All Rights Reserved</p>
-  <p class="second-line">Designed by<a href="https://bootstrapmade.com"> BootstrapMade</a></p>
+    <footer>
+      <p class="first-line">
+        &copy; Copyright<span> Restaurantly.</span> All Rights Reserved
+      </p>
+      <p class="second-line">
+        Designed by<a href="https://bootstrapmade.com"> BootstrapMade</a>
+      </p>
 
-  <a  href="#sect-home"><i class="fa-solid fa-arrow-up btn-to-top"></i></a>
-
-</footer>
+      <a href="#sect-home"><i class="fa-solid fa-arrow-up btn-to-top"></i></a>
+    </footer>
     <!-- ............... CopyRight Section End ................. -->
-
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./lightbox/simple-lightbox.js"></script>

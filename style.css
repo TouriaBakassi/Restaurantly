@@ -63,6 +63,10 @@ nav{
     border: 1px solid black;
     
 }
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
 nav a{
     text-decoration: none;
     color: #fff; 
@@ -107,8 +111,9 @@ ul li a.active{
 }
 nav .fa-bars{
     display: none;
+    font-size: 22px;
 }
-/* .............Drop Down...... */
+/* .................................Drop Down...... */
 .drop-down{
     position: relative;
 }
@@ -176,8 +181,69 @@ visibility: hidden;
     color: #cda45e;
     transition: all .5s ease-in-out;
 }
+/* ........................NAVBAR.................... */
+.navbar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;right: 0;bottom: 0;
+    background-color: #625b4b;color:#fff ;
+    transform: translateX(100%);
+    transition: all .8s ease-in-out;
+    z-index: 15;
+    padding: 50px;
+    overflow: auto;
+    visibility: hidden;
+}
+.navbar.open{
+    transform: translateX(0); 
+    visibility: visible;
+    transition: all .8s ease-in-out;
+}
+.navbar .xmark{
+    width: 100%;
+    text-align: right;
+    font-size: 40px;
+}
+.navbar ul{
+    width: 100%;
+    text-align: left;
+    padding: 20px 0px;
+}
+.navbar ul li{
+    width: 100%;
+    display: block;
+    padding: 15px 5px;
+    font-size: 30px;
+}
+.navbar ul li:hover{
+    background-color: #5a5445;
+}
+.navbar ul li a{
+    width: 100%;
+}
+.navbar ul li details summary a{
+    width: 100%;
+}
 
-
+.navbar summary::marker{
+    content: "+ ";
+    font-size: 30px;
+}
+.navbar #book{
+    font-size: 25px;
+    border: 2px solid #cda45e;
+    border-radius: 50px;
+    padding: 5px 25px;
+margin: 0;
+    background-color: transparent;
+    transition: all .6s ease-in-out;
+  }
+  .navbar #book:hover{
+    color: #fff ;
+     background-color:#cda45e;
+     transition: all .6s ease-in-out;
+  }
 
 
 
