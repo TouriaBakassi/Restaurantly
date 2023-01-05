@@ -70,6 +70,12 @@ nav {
   background-color: rgba(0, 0, 0, 0.581);
   border: 1px solid black;
 }
+nav.fixed{
+    position: fixed;
+ top: 0; left: 0;right: 0;
+ background-color: rgb(0, 0, 0);
+
+}
 .navbar ul li a {
   text-decoration: none;
   color: #fff;
@@ -310,7 +316,6 @@ nav .fa-bars {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
   padding-right: 160px;
 }
 .video-btn .play {
@@ -1140,12 +1145,15 @@ nav .fa-bars {
 .form-row input,
 .form-row textarea {
   padding: 12px;
-  margin: 0px 0px 30px;
+  margin: 0px 0px 30px 0px;
   outline: none;
   border: 0.3px solid #625b4b;
   background-color: #0c0b09;
   color: white;
   font-size: 15px;
+}
+.form-row textarea{
+    margin: 0px 0px 15px 0px;   
 }
 .form-row input::placeholder,
 .form-row textarea::placeholder {
@@ -1176,6 +1184,21 @@ nav .fa-bars {
 .form-row textarea:focus {
   border: 0.3px solid #cda45e;
 }
+.row-btn #button {
+    text-decoration: none;
+    color: white;
+    padding: 13px 40px;
+    background-color: #cda45e;
+    border-radius: 30px;
+    transition: all 0.5s ease-in-out;
+    color: white;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  }
+  .row-btn #button:hover {
+    background-color: #cda45ee0;
+    transition: all 0.5s ease-in-out;
+  }
 /* .....................Sect Contact End.......... */
 /* .....................Sect Footer Start........ */
 .sect-footer {
@@ -1372,7 +1395,6 @@ footer .second-line a {
     display: block;
   }
   .video-btn {
-    border: 1px solid red;
     padding-right: 60px;
     padding-left: 60px;
   }

@@ -25,6 +25,7 @@ allnavCle.forEach((item)=>{
   });
 });
 
+
 // .............Pour Menu-Cle "active"
 let allcle = document.querySelectorAll(".cle");
 
@@ -206,6 +207,20 @@ let btntop=document.querySelector(".btn-to-top");
   }
 
  });
+// ...........................................nav
+
+let nav= document.querySelector("nav");
+window.addEventListener("scroll",()=>{
+if (window.pageYOffset > 30) {
+  nav.classList.add("fixed");
+}else{
+  nav.classList.remove("fixed");
+}
+});
+
+
+
+
 
 // .................................NAVBAR
 let bar=document.querySelector(".bar");
@@ -218,3 +233,26 @@ navbar.classList.add("open");
  xmmark.addEventListener("click",()=>{
   navbar.classList.remove("open");
  });
+//  .....................................Emailjs
+
+emailjs.init('R3rkCugsrhkrt7L3X');
+
+const btn = document.getElementById('button');
+
+document.getElementById('form').addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_pp2gbvp';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Your Email Sent To Restaurantly By Successfuly!✅✅');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});

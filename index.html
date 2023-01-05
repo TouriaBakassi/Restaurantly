@@ -830,21 +830,23 @@
             </div>
           </div>
         </div>
-        <form class="formu" action="#set" method="post">
+        <form id="form" class="formu" action="#set" method="post">
           <div class="form-row form-row1">
-            <input type="text" placeholder="Your Name" /><input
-              type="email"
+            <input type="text" placeholder="Your Name" name="from_name" id="from_name" /><input
+            type="email"
               placeholder="Your Email"
+              name="from_email" id="from_email"
             />
           </div>
           <div class="form-row form-row2">
-            <input type="text" placeholder="Subject" />
+            <input type="text" placeholder="Subject" name="subject" id="subject" />
           </div>
           <div class="form-row form-row3">
-            <textarea cols="30" rows="10" placeholder="Message"></textarea>
+            <textarea cols="30" rows="10" placeholder="Message" name="message" id="message"></textarea>
           </div>
           <div class="form-row row-btn">
-            <a href="#message">Send Message</a>
+            
+           <input  type="submit" id="button" value="Send Message">
           </div>
         </form>
       </div>
@@ -909,7 +911,8 @@
       <a href="#sect-home"><i class="fa-solid fa-arrow-up btn-to-top"></i></a>
     </footer>
     <!-- ............... CopyRight Section End ................. -->
-
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./lightbox/simple-lightbox.js"></script>
     <script src="./script.js"></script>
