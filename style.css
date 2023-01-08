@@ -8,6 +8,12 @@
 html {
   scroll-behavior: smooth;
 }
+#loader{
+ position: fixed;
+ width: 100%;height: 100vh;
+ z-index: 50;
+ background: url(./image/bg.svg),#000;
+}
 body {
   margin: 0;
   width: 100%;

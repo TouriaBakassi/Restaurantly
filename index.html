@@ -3,16 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
@@ -23,9 +19,10 @@
     />
     <link rel="stylesheet" href="./lightbox/simple-lightbox.css" />
     <link rel="stylesheet" href="style.css" />
-    <title>Restaurant</title>
+    <title>Restaurantly</title>
   </head>
   <body>
+    <div id="loader"></div>
     <!-- ............... Home Section Start ................. -->
     <div id="sect-home" class="sect-home">
       <div class="sect1">
@@ -110,7 +107,7 @@
           </ul>
         </div>
         <div class="welcome">
-          <div class="introduction">
+          <div class="introduction" data-aos="zoom-in" data-aos-duration="1000"data-aos-once="true">
             <h1>Welcome to <span>Restaurantly</span></h1>
             <h3>Delivering great food for more than 18 years!</h3>
             <div class="btns">
@@ -118,7 +115,7 @@
               <a href="#sect-table">BOOK A TABLE</a>
             </div>
           </div>
-          <div class="video-btn">
+          <div class="video-btn" data-aos="zoom-in"data-aos-duration="900"data-aos-once="true">
             <div class="play">
               <i class="fa-solid fa-play"></i>
             </div>
@@ -144,7 +141,7 @@
     <!-- ............... About Section Start ................. -->
 
     <div id="sect-about" class="sect-about">
-      <ul>
+      <ul data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
         <li>
           Voluptatem dignissimos provident quasi corporis voluptates sit
           assumenda.
@@ -174,8 +171,8 @@
           sunt in culpa qui officia deserunt mollit anim id est laborum
         </li>
       </ul>
-      <div class="image-about">
-        <div class="image">
+      <div class="image-about" data-aos="zoom-in-up"data-aos-duration="1500" data-aos-once="true">
+        <div class="image" >
           <img src="./image/about.jpg" alt="about" />
         </div>
       </div>
@@ -183,12 +180,12 @@
     <!-- ............... About Section End ................. -->
     <!-- ............... Why-Us Section Start ................. -->
     <div id="sect-why-us" class="sect-why-us">
-      <div class="titles">
+      <div class="titles" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
         <h4>WHY US <span class="line"></span></h4>
         <h2>Why Choose Our Restaurant</h2>
       </div>
       <div class="all-cards">
-        <div class="card">
+        <div class="card" data-aos="zoom-in"data-aos-duration="1200" data-aos-once="true">
           <div class="content">
             <h2>01</h2>
             <h3>Lorem Ipsum</h3>
@@ -198,7 +195,7 @@
             </p>
           </div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="zoom-in"data-aos-duration="1150" data-aos-once="true">
           <div class="content">
             <h2>02</h2>
             <h3>Repellat Nihil</h3>
@@ -208,7 +205,7 @@
             </p>
           </div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="zoom-in" data-aos-duration="1200" data-aos-once="true">
           <div class="content">
             <h2>03</h2>
             <h3>Ad ad velit qui</h3>
@@ -223,11 +220,11 @@
     <!-- ............... Why-Us Section End ................. -->
     <!-- ............... Menu Section Start ................. -->
     <div id="sect-menu" class="sect-menu">
-      <div class="titles">
+      <div class="titles" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
         <h4>MENU<span class="line"></span></h4>
         <h2>Check Our Tasty Menu</h2>
       </div>
-      <div class="menu">
+      <div class="menu" data-aos="fade-up" data-aos-duration="1400" data-aos-once="true">
         <ul class="menu-cle">
           <li class="active cle all-item">All</li>
           <li class="cle starters">Starters</li>
@@ -368,12 +365,12 @@
     <!-- ............... Specials Section Start ................. -->
 
     <div id="sect-specials" class="sect-specials">
-      <div class="titles">
+      <div class="titles" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
         <h4>SPECIALS<span class="line"></span></h4>
         <h2>Check Our Specials</h2>
       </div>
 
-      <div class="specials">
+      <div class="specials" data-aos="fade-up" data-aos-duration="1400" data-aos-once="true">
         <ul class="specials-titles">
           <li class="special-key key1 active">Modi sit est</li>
           <li class="special-key key2">Unde praesentium sed</li>
@@ -495,11 +492,11 @@
     <!-- ............... Specials Section End ................. -->
     <!-- ............... Events Section Start ................. -->
     <div id="sect-events" class="sect-events">
-      <div class="titles">
+      <div class="titles" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
         <h4>SPECIALS<span class="line"></span></h4>
         <h2>Check Our Specials</h2>
       </div>
-      <div class="swiper mySwiper">
+      <div class="swiper mySwiper" data-aos="fade-up" data-aos-duration="1400" data-aos-once="true">
         <div class="swiper-wrapper events">
           <div class="swiper-slide event">
             <div class="event-image">
@@ -577,11 +574,11 @@
     <!-- ............... Events Section End ................. -->
     <!-- ............... Table Section End ................. -->
     <div id="sect-table" class="sect-table">
-      <div class="titles">
+      <div class="titles" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
         <h4>RESERVATION<span class="line"></span></h4>
         <h2>Book a Table</h2>
       </div>
-      <div class="table">
+      <div class="table"data-aos="fade-up" data-aos-duration="1400" data-aos-once="true">
         <div class="row">
           <input type="text" placeholder="Your Name" />
           <input type="email" placeholder="Your Email" />
@@ -609,11 +606,11 @@
     <!-- ............... Table Section End ................. -->
     <!-- ............... TESTIMONIALS Section End ................. -->
     <div id="sect-testimonials" class="sect-testimonials">
-      <div class="titles">
+      <div class="titles" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
         <h4>TESTIMONIALS<span class="line"></span></h4>
         <h2>What they're saying about us</h2>
       </div>
-      <div class="swiper mySwiper2">
+      <div class="swiper mySwiper2" data-aos="fade-up" data-aos-duration="1400" data-aos-once="true">
         <div class="all-testimonials swiper-wrapper">
           <div class="testimonial swiper-slide">
             <div class="quote">
@@ -698,11 +695,11 @@
     <!-- ............... TESTIMONIALS Section End ................. -->
     <!-- ............... Gallery Section End ................. -->
     <div id="sect-gallery" class="sect-gallery">
-      <div class="titles">
+      <div class="titles" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
         <h4>GALLERY<span class="line"></span></h4>
         <h2>Some photos from Our Restaurant</h2>
       </div>
-      <div class="gallery">
+      <div class="gallery" data-aos="fade-up" data-aos-duration="1400" data-aos-once="true">
         <a href="./image/gallery-1.jpg" class="gallery-item"
           ><img src="./image/gallery-1.jpg" alt="gallery-1"
         /></a>
@@ -732,12 +729,12 @@
     <!-- ............... Gallery Section End ................. -->
     <!-- ............... Chefs Section End .................... -->
     <div id="sect-chefs" class="sect-chefs">
-      <div class="titles">
+      <div class="titles" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
         <h4>CHEFS<span class="line"></span></h4>
         <h2>Our Proffesional Chefs</h2>
       </div>
       <div class="chefs">
-        <div class="chefs-item">
+        <div class="chefs-item" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
           <img src="./image/chefs-1.jpg" alt="chefs-1" />
           <div class="chef-info">
             <h4>Walter White</h4>
@@ -750,7 +747,7 @@
             </div>
           </div>
         </div>
-        <div class="chefs-item">
+        <div class="chefs-item" data-aos="zoom-in" data-aos-duration="1100" data-aos-once="true">
           <img src="./image/chefs-2.jpg" alt="chefs-2" />
           <div class="chef-info">
             <h4>Sarah Jhonson</h4>
@@ -763,7 +760,7 @@
             </div>
           </div>
         </div>
-        <div class="chefs-item">
+        <div class="chefs-item" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
           <img src="./image/chefs-3.jpg" alt="chefs-3" />
           <div class="chef-info">
             <h4>William Anderson</h4>
@@ -781,11 +778,11 @@
     <!-- ............... Chefs Section End .................... -->
     <!-- ............... Contact Section End ................. -->
     <div id="sect-contact" class="sect-contact">
-      <div class="titles">
+      <div class="titles" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
         <h4>CONTACT<span class="line"></span></h4>
         <h2>Contact Us</h2>
       </div>
-      <div class="map">
+      <div class="map" data-aos="fade-up" data-aos-duration="1400" data-aos-once="true">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96779.40849915502!2d-74.07617826365441!3d40.71016756205765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sfr!2sma!4v1672770514856!5m2!1sfr!2sma"
           width="600"
@@ -796,7 +793,7 @@
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-      <div class="contact">
+      <div class="contact"data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         <div class="address">
           <div class="address-item">
             <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
@@ -915,6 +912,7 @@
     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./lightbox/simple-lightbox.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>

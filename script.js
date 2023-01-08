@@ -256,3 +256,31 @@ document.getElementById('form').addEventListener('submit', function(event) {
       alert(JSON.stringify(err));
     });
 });
+//..............................AOS Animated on scroll
+  AOS.init();
+
+// ..................................change-Title..
+
+  let titl=document.title;
+  window.addEventListener("blur",()=>{
+    document.title = "Come Back I Miss You😂";
+  });
+  window.addEventListener("focus",()=>{
+    document.title = titl;
+  });
+  let loader=document.querySelector("#loader");
+       window.addEventListener("load",()=>{  
+       loader.style.display="none";  
+      });
+  
+// /...............................//////////////
+
+let tab=["touria","nihal","douaa","zahra","maryam","mohammed","lina","roaya","souad","oussama","hiba","fati"];
+
+for (let i = 0; i < tab.length; i++) {
+  let element = tab[i];
+  if (element.includes("m")){
+  element += "l";
+  console.log(element);
+  };
+}; 
