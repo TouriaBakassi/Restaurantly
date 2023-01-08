@@ -15,24 +15,35 @@ video.classList.remove("show")
 });
 
 // ............Pour nav-cle "active"
-let allnavCle = document.querySelectorAll(".navcle");
-allnavCle.forEach((item)=>{
+let allnavcle = document.querySelectorAll(".navcle");
+let sections=document.querySelectorAll("section");
+allnavcle.forEach((item)=>{
   item.addEventListener("click",()=>{
-    allnavCle.forEach((item)=>{
+    allnavcle.forEach((item)=>{
       item.classList.remove("active");
     });
     item.classList.add("active");
   });
 });
-// let allsect=document.querySelectorAll("section");
+
 // window.addEventListener("scroll",()=>{
-//   let sectlength = allsect.length;
-//   while (--sectlength && window.scrollY+97 < allsect[sectlength].offsetTop ) {}
-//     allnavCle.forEach((item)=>{
-//       item.classList.remove("active");
-//       item[sectlength].classList.add("active");
-//         });
-  
+//   let current="";
+// sections.forEach((section)=>{
+// let sectiontop = section.offsetTop;
+// console.log(sectiontop);
+// let sectionheigt = section.clientHeight;
+// console.log(sectionheigt);
+// if (window.pageYOffset > (sectiontop-sectionheigt / 3)) {
+//   current= section.getAttribute("id");
+//   console.log(current);
+// }
+// });
+//  allnavcle.forEach((cle)=>{
+//   cle.classList.remove("active");
+//   if (cle.classList.contains(current)) {
+//     cle.classList.add("active");
+//   }
+//  });
 // });
 
 
