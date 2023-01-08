@@ -24,6 +24,21 @@ allnavCle.forEach((item)=>{
     item.classList.add("active");
   });
 });
+// let allsect=document.querySelectorAll("section");
+// window.addEventListener("scroll",()=>{
+//   let sectlength = allsect.length;
+//   while (--sectlength && window.scrollY+97 < allsect[sectlength].offsetTop ) {}
+//     allnavCle.forEach((item)=>{
+//       item.classList.remove("active");
+//       item[sectlength].classList.add("active");
+//         });
+  
+// });
+
+
+
+
+
 
 
 // .............Pour Menu-Cle "active"
