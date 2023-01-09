@@ -48,44 +48,6 @@ sections.forEach(section =>{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-// window.addEventListener("scroll",()=>{
-//   let current="";
-// sections.forEach(section=>{
-// let sectiontop = section.offsetTop;
-// console.log(sectiontop);
-// let sectionheigt = section.clientHeight;
-// console.log(sectionheigt);
-// if (window.pageYOffset > (sectiontop-sectionheigt / 3)) {
-//   current= section.getAttribute("id");
-//   console.log(current);
-// }
-// });
-//  allnavcle.forEach(cle=>{
-//   cle.classList.remove("active");
-//   if ("cle[href*="+current+ "]"==true) {
-//     cle.classList.add("active");
-//   }
-//  });
-// });
-
-
-
-
-
-
-
 // .............Pour Menu-Cle "active"
 let allcle = document.querySelectorAll(".cle");
 
