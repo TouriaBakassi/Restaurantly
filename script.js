@@ -15,23 +15,23 @@ video.classList.remove("show")
 });
 
 // ............Pour nav-cle "active"
-// let allnavcle = document.querySelectorAll(".navcle");
-// let sections=document.querySelectorAll("section");
-// allnavcle.forEach((item)=>{
-//   item.addEventListener("click",()=>{
-//     allnavcle.forEach((item)=>{
-//       item.classList.remove("active");
-//     });
-//     item.classList.add("active");
-//   });
-// });
+let allnavcle = document.querySelectorAll(".navcle");
+
+allnavcle.forEach((item)=>{
+  item.addEventListener("click",()=>{
+    allnavcle.forEach((item)=>{
+      item.classList.remove("active");
+    });
+    item.classList.add("active");
+  });
+});
 
  let sections=document.querySelectorAll("section");
 let navli=document.querySelectorAll("nav ul li a");
 window.onscroll=()=>{
 sections.forEach(section =>{
   let top= window.scrollY;
-  let offset= section.offsetTop-130;
+  let offset= section.offsetTop-170;
   let height= section.offsetHeight;
   let id= section.getAttribute("id");
 
@@ -297,7 +297,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
   
 // /...............................//////////////
 
-let tab=["touria","nihal","douaa","zahra","maryam","mohammed","lina","roaya","souad","oussama","hiba","fati"];
+let tab=["touria","nihal","douaa","zahra","maryam","mohammed","lina","roaya","souad","oussama","hiba","fati","ismail","hassna","wafae","safae","ayman"];
 
 for (let i = 0; i < tab.length; i++) {
   let element = tab[i];
