@@ -15,20 +15,54 @@ video.classList.remove("show")
 });
 
 // ............Pour nav-cle "active"
-let allnavcle = document.querySelectorAll(".navcle");
-let sections=document.querySelectorAll("section");
-allnavcle.forEach((item)=>{
-  item.addEventListener("click",()=>{
-    allnavcle.forEach((item)=>{
-      item.classList.remove("active");
+// let allnavcle = document.querySelectorAll(".navcle");
+// let sections=document.querySelectorAll("section");
+// allnavcle.forEach((item)=>{
+//   item.addEventListener("click",()=>{
+//     allnavcle.forEach((item)=>{
+//       item.classList.remove("active");
+//     });
+//     item.classList.add("active");
+//   });
+// });
+
+ let sections=document.querySelectorAll("section");
+let navli=document.querySelectorAll("nav ul li a");
+window.onscroll=()=>{
+sections.forEach(section =>{
+  let top= window.scrollY;
+  let offset= section.offsetTop-130;
+  let height= section.offsetHeight;
+  let id= section.getAttribute("id");
+
+  if (top>=offset && top< offset+ height) {
+    navli.forEach(li =>{
+      li.classList.remove("active");
+      document.querySelector("nav ul li a[href*=" + id + "]").classList.add("active");
     });
-    item.classList.add("active");
-  });
+
+  }
 });
+
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // window.addEventListener("scroll",()=>{
 //   let current="";
-// sections.forEach((section)=>{
+// sections.forEach(section=>{
 // let sectiontop = section.offsetTop;
 // console.log(sectiontop);
 // let sectionheigt = section.clientHeight;
@@ -38,9 +72,9 @@ allnavcle.forEach((item)=>{
 //   console.log(current);
 // }
 // });
-//  allnavcle.forEach((cle)=>{
+//  allnavcle.forEach(cle=>{
 //   cle.classList.remove("active");
-//   if (cle.classList.contains(current)) {
+//   if ("cle[href*="+current+ "]"==true) {
 //     cle.classList.add("active");
 //   }
 //  });
